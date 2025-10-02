@@ -296,19 +296,6 @@
             "spacing_top": 0,
             "spacing_bottom": 0
           }
-        },
-        "sibling-products-block-1": {
-          "type": "sibling_products",
-          "settings": {
-            "display_sibling_products": true,
-            "sibling_products_title": "More from this Collection",
-            "sibling_products_layout": "column",
-            "sibling_products_per_row": "3",
-            "sibling_products_limit": 6,
-            "sibling_products_bg": "#f8f9fa",
-            "spacing_top": 30,
-            "spacing_bottom": 30
-          }
         }
       },
       "block_order": [
@@ -335,8 +322,7 @@
         "dc4b6986-e274-47d6-bc63-d9deab6211d7",
         "c308b6ed-926b-44c6-abd4-ea5bc0cdf499",
         "928ca58c-976c-4d1f-88d0-fff5456d2cf5",
-        "a2dc0e06-db32-4ce9-bc95-f6ab0ae9a032",
-        "sibling-products-block-1"
+        "a2dc0e06-db32-4ce9-bc95-f6ab0ae9a032"
       ],
       "settings": {
         "container": "container",
