@@ -20,6 +20,8 @@
 
     assign column_item_width = section.settings.column_item_width
     assign column_item_height = section.settings.column_item_height
+    assign image_width = section.settings.sibling_product_image_width | default: 80
+    assign image_height = section.settings.sibling_product_image_height | default: 80
 
     assign sibling_products = blank
     assign current_product_collections = product.collections
@@ -52,6 +54,8 @@
         background-color: {{ section.settings.sibling_products_bg }};
         --column-item-width: {{ column_item_width | append: 'px' }};
         --column-item-height: {{ column_item_height | append: 'px' }};
+        --sibling-image-width: {{ image_width | append: 'px' }};
+        --sibling-image-height: {{ image_height | append: 'px' }};
     }
 
     .section-block-{{section.id}} .scoder-block-header .title {
@@ -209,7 +213,9 @@
                       show_vendor: false,
                       show_rating: false,
                       show_quick_add: false,
-                      placeholder_index: forloop.index
+                      placeholder_index: forloop.index,
+                      image_width: image_width,
+                      image_height: image_height
                     %}
                   </div>
                   {%- assign displayed_count = displayed_count | plus: 1 -%}
@@ -442,6 +448,28 @@
       "unit": "px",
       "default": 120,
       "info": "Height of each product item in column layout"
+    },
+    {
+      "type": "range",
+      "id": "sibling_product_image_width",
+      "label": "Product Image Width",
+      "min": 40,
+      "max": 120,
+      "step": 5,
+      "unit": "px",
+      "default": 80,
+      "info": "Width of the product image in sibling products"
+    },
+    {
+      "type": "range",
+      "id": "sibling_product_image_height",
+      "label": "Product Image Height",
+      "min": 40,
+      "max": 120,
+      "step": 5,
+      "unit": "px",
+      "default": 80,
+      "info": "Height of the product image in sibling products"
     },
     {
       "type": "header",
