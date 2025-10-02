@@ -29,14 +29,18 @@
         if current_product_collections.size > 0
             assign first_collection = current_product_collections.first
             assign sibling_products = first_collection.products | where: 'available', true
-            assign filtered_siblings = blank
-            assign filtered_siblings = sibling_products | where: 'id', '!=', product.id
-            assign sibling_products = filtered_siblings
         endif
         
-        assign products_to_display = sibling_products.size
-        if sibling_products.size > limit
-            assign products_to_display = limit
+        assign products_to_display = 0
+        if sibling_products.size > 0
+            for prod in sibling_products
+                if prod.id != product.id
+                    assign products_to_display = products_to_display | plus: 1
+                endif
+            endfor
+            if products_to_display > limit
+                assign products_to_display = limit
+            endif
         endif
     -%}
     
@@ -167,7 +171,7 @@
     </style>
     
     <div class="scoder-block scoder-sibling-products-block section-block-{{section.id}}" id="scoder-sibling-products-block-{{ section.id }}">
-        {% if sibling_products.size > 0 %}
+        {% if products_to_display > 0 %}
             <div class="wrapper-container {% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %}">
                 {%- if block_title != blank -%}
                     <div class="scoder-block-header text-{{ block_title_align }}">
@@ -180,32 +184,40 @@
                 <div class="scoder-block-content">
                     {%- if layout == 'column' -%}
                         <div class="sibling-products-column">
-                            {%- for sibling_product in sibling_products limit: limit -%}
-                                <div class="product">
-                                    {% render 'sibling-product-card',
-                                        product_card_product: sibling_product,
-                                        media_size: 'square',
-                                        portrait_aspect_ratio: '100',
-                                        show_vendor: false,
-                                        show_rating: false,
-                                        show_quick_add: false,
-                                        placeholder_index: forloop.index
-                                    %}
-                                </div>
+                            {%- assign displayed_count = 0 -%}
+                            {%- for sibling_product in sibling_products -%}
+                                {%- if sibling_product.id != product.id and displayed_count < limit -%}
+                                    <div class="product">
+                                        {% render 'sibling-product-card',
+                                            product_card_product: sibling_product,
+                                            media_size: 'square',
+                                            portrait_aspect_ratio: '100',
+                                            show_vendor: false,
+                                            show_rating: false,
+                                            show_quick_add: false,
+                                            placeholder_index: forloop.index
+                                        %}
+                                    </div>
+                                    {%- assign displayed_count = displayed_count | plus: 1 -%}
+                                {%- endif -%}
                             {%- endfor -%}
                         </div>
                     {%- else -%}
                         <div class="sibling-products-grid column-{{ column }} column-tb-{{ section.settings.layout_tablet }} column-mb-{{ section.settings.layout_mobile }}">
-                            {%- for sibling_product in sibling_products limit: limit -%}
-                                <div class="product">
-                                    {% render 'product-grid-layout',
-                                        product_card_product: sibling_product,
-                                        media_size: 'square',
-                                        portrait_aspect_ratio: '100',
-                                        serial: forloop.index,
-                                        sectionId: section.id
-                                    %}
-                                </div>
+                            {%- assign displayed_count = 0 -%}
+                            {%- for sibling_product in sibling_products -%}
+                                {%- if sibling_product.id != product.id and displayed_count < limit -%}
+                                    <div class="product">
+                                        {% render 'product-grid-layout',
+                                            product_card_product: sibling_product,
+                                            media_size: 'square',
+                                            portrait_aspect_ratio: '100',
+                                            serial: forloop.index,
+                                            sectionId: section.id
+                                        %}
+                                    </div>
+                                    {%- assign displayed_count = displayed_count | plus: 1 -%}
+                                {%- endif -%}
                             {%- endfor -%}
                         </div>
                     {%- endif -%}
