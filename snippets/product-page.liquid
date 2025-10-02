@@ -1822,6 +1822,20 @@
                           {%- endif -%}
                       {%- when 'custom_liquid' -%}
                           {{ block.settings.custom_liquid }}
+                      {%- when 'sibling_products' -%}
+                          {%- if block.settings.display_sibling_products -%}
+                              <div class="productView-moreItem sibling-products-block"
+                                  style="--spacing-top: {{ spacing_top | append: 'px' }};
+                                  --spacing-bottom: {{ spacing_bottom | append: 'px' }};
+                                  --sibling-bg: {{ block.settings.sibling_products_bg }};
+                                  "
+                              >
+                                  {% render 'sibling-products-block',
+                                      block: block,
+                                      product: product
+                                  %}
+                              </div>
+                          {%- endif -%}
                 
                   {%- endcase -%}
               {%- endfor -%}
