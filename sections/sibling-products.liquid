@@ -1,0 +1,472 @@
+{{ 'component-sibling-products.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.display_sibling_products -%}
+    {%- liquid
+        assign container = section.settings.sibling_products_container
+        assign limit = section.settings.sibling_products_limit
+        assign layout = section.settings.sibling_products_layout
+        assign block_title = section.settings.sibling_products_title
+        assign block_title_align = section.settings.sibling_products_title_align
+        assign column = section.settings.sibling_products_per_row
+        
+        assign mg_top_desktop = section.settings.mg_top_desktop
+        assign mg_top_tablet = section.settings.mg_top_tablet
+        assign mg_top_mobile = section.settings.mg_top_mobile
+        assign mg_bottom_desktop = section.settings.mg_bottom_desktop
+        assign mg_bottom_tablet = section.settings.mg_bottom_tablet
+        assign mg_bottom_mobile = section.settings.mg_bottom_mobile
+        assign mg_bottom_title = section.settings.mg_bottom_title
+        assign mg_bottom_title_mb = section.settings.mg_bottom_title_mb
+        
+        assign sibling_products = blank
+        assign current_product_collections = product.collections
+        
+        comment
+            Get products from the same collection(s) as the current product
+            Exclude the current product from the results
+        endcomment
+        
+        if current_product_collections.size > 0
+            assign first_collection = current_product_collections.first
+            assign sibling_products = first_collection.products | where: 'available', true
+            assign filtered_siblings = blank
+            assign filtered_siblings = sibling_products | where: 'id', '!=', product.id
+            assign sibling_products = filtered_siblings
+        endif
+        
+        assign products_to_display = sibling_products.size
+        if sibling_products.size > limit
+            assign products_to_display = limit
+        endif
+    -%}
+    
+    <style type="text/css" media="screen">
+        .section-block-{{section.id}} {
+            background-color: {{ section.settings.sibling_products_bg }};
+        }
+        
+        .section-block-{{section.id}} .scoder-block-header .title {
+            margin-bottom: {{ mg_bottom_title | append: 'px' }};
+        }
+        
+        .sibling-products-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .sibling-products-column .product {
+            border: 1px solid #e9e9e9;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+        }
+        
+        .sibling-products-column .product:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+            border-color: #d1d1d1;
+        }
+        
+        .sibling-products-column .product .card-product {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 15px;
+        }
+        
+        .sibling-products-column .product .card-product__media {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+        }
+        
+        .sibling-products-column .product .card-product__content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .sibling-products-column .product .card-product__title {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.3;
+            margin: 0;
+        }
+        
+        .sibling-products-column .product .card-product__price {
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .sibling-products-column .product .card-product__title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .sibling-products-column .product .card-product__title a:hover {
+            color: #007bff;
+        }
+        
+        @media (max-width: 767px) {
+            .sibling-products-column {
+                gap: 15px;
+            }
+            
+            .sibling-products-column .product {
+                padding: 12px;
+            }
+            
+            .sibling-products-column .product .card-product {
+                gap: 12px;
+            }
+            
+            .sibling-products-column .product .card-product__media {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .sibling-products-column .product .card-product__title {
+                font-size: 13px;
+            }
+            
+            .sibling-products-column .product .card-product__price {
+                font-size: 12px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .section-block-{{section.id}} {
+                padding-top: {{ mg_top_mobile | append: 'px' }};
+                padding-bottom: {{ mg_bottom_mobile | append: 'px' }};
+            }
+            .section-block-{{section.id}} .scoder-block-header .title {
+                margin-bottom: {{ mg_bottom_title_mb | append: 'px' }};
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .section-block-{{section.id}} {
+                padding-top: {{ mg_top_tablet | append: 'px' }};
+                padding-bottom: {{ mg_bottom_tablet | append: 'px' }};
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .section-block-{{section.id}} {
+                padding-top: {{ mg_top_desktop | append: 'px' }};
+                padding-bottom: {{ mg_bottom_desktop | append: 'px' }};
+            }
+        }
+    </style>
+    
+    <div class="scoder-block scoder-sibling-products-block section-block-{{section.id}}" id="scoder-sibling-products-block-{{ section.id }}">
+        {% if sibling_products.size > 0 %}
+            <div class="wrapper-container {% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %}">
+                {%- if block_title != blank -%}
+                    <div class="scoder-block-header text-{{ block_title_align }}">
+                        <h3 class="title">
+                            <span class="text">{{ block_title | escape }}</span>
+                        </h3>
+                    </div>
+                {%- endif -%}
+                
+                <div class="scoder-block-content">
+                    {%- if layout == 'column' -%}
+                        <div class="sibling-products-column">
+                            {%- for sibling_product in sibling_products limit: limit -%}
+                                <div class="product">
+                                    {% render 'sibling-product-card',
+                                        product_card_product: sibling_product,
+                                        media_size: 'square',
+                                        portrait_aspect_ratio: '100',
+                                        show_vendor: false,
+                                        show_rating: false,
+                                        show_quick_add: false,
+                                        placeholder_index: forloop.index
+                                    %}
+                                </div>
+                            {%- endfor -%}
+                        </div>
+                    {%- else -%}
+                        <div class="sibling-products-grid column-{{ column }} column-tb-{{ section.settings.layout_tablet }} column-mb-{{ section.settings.layout_mobile }}">
+                            {%- for sibling_product in sibling_products limit: limit -%}
+                                <div class="product">
+                                    {% render 'product-grid-layout',
+                                        product_card_product: sibling_product,
+                                        media_size: 'square',
+                                        portrait_aspect_ratio: '100',
+                                        serial: forloop.index,
+                                        sectionId: section.id
+                                    %}
+                                </div>
+                            {%- endfor -%}
+                        </div>
+                    {%- endif -%}
+                </div>
+            </div>
+        {% elsif current_product_collections.size > 0 %}
+            <div class="wrapper-container {% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %}">
+                {%- if block_title != blank -%}
+                    <div class="scoder-block-header text-{{ block_title_align }}">
+                        <h3 class="title">
+                            <span class="text">{{ block_title | escape }}</span>
+                        </h3>
+                    </div>
+                {%- endif -%}
+                <div class="sibling-products-empty">
+                    <p>No other products available in this collection.</p>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{%- endif -%}
+
+{% schema %}
+{
+    "name": "Sibling Products",
+    "class": "scoder-sibling-products-sections",
+    "settings": [
+        {
+            "type": "header",
+            "content": "General Settings"
+        },
+        {
+            "type": "checkbox",
+            "id": "display_sibling_products",
+            "label": "Display Sibling Products",
+            "default": true
+        },
+        {
+            "type": "select",
+            "id": "sibling_products_container",
+            "label": "Container",
+            "default": "container",
+            "options": [
+                {
+                    "value": "container",
+                    "label": "Container"
+                },
+                {
+                    "value": "fullwidth",
+                    "label": "Full Width"
+                }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "Spacing"
+        },
+        {
+            "type": "range",
+            "id": "mg_top_desktop",
+            "label": "Margin Top (Desktop)",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "mg_top_tablet",
+            "label": "Margin Top (Tablet)",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "mg_top_mobile",
+            "label": "Margin Top (Mobile)",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 25
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_desktop",
+            "label": "Margin Bottom (Desktop)",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_tablet",
+            "label": "Margin Bottom (Tablet)",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_mobile",
+            "label": "Margin Bottom (Mobile)",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "default": 25
+        },
+        {
+            "type": "select",
+            "id": "sibling_products_layout",
+            "label": "Layout",
+            "options": [
+                {
+                    "value": "column",
+                    "label": "Column"
+                },
+                {
+                    "value": "grid",
+                    "label": "Grid"
+                }
+            ],
+            "default": "column"
+        },
+        {
+            "type": "color",
+            "id": "sibling_products_bg",
+            "label": "Background Color",
+            "default": "#ffffff"
+        },
+        {
+            "type": "text",
+            "id": "sibling_products_title",
+            "label": "Section Title",
+            "default": "More from this Collection"
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_title",
+            "label": "Title Bottom Margin",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_title_mb",
+            "label": "Title Bottom Margin (Mobile)",
+            "min": 0,
+            "max": 50,
+            "step": 1,
+            "unit": "px",
+            "default": 20
+        },
+        {
+            "type": "select",
+            "id": "sibling_products_title_align",
+            "label": "Title Alignment",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "center",
+                    "label": "Center"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ],
+            "default": "left"
+        },
+        {
+            "type": "header",
+            "content": "Grid Settings"
+        },
+        {
+            "type": "select",
+            "id": "sibling_products_per_row",
+            "label": "Products per Row (Grid Layout)",
+            "default": "3",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "1"
+                },
+                {
+                    "value": "2",
+                    "label": "2"
+                },
+                {
+                    "value": "3",
+                    "label": "3"
+                },
+                {
+                    "value": "4",
+                    "label": "4"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "layout_tablet",
+            "label": "Products per Row (Tablet)",
+            "default": "2",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "1"
+                },
+                {
+                    "value": "2",
+                    "label": "2"
+                },
+                {
+                    "value": "3",
+                    "label": "3"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "layout_mobile",
+            "label": "Products per Row (Mobile)",
+            "default": "1",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "1"
+                },
+                {
+                    "value": "2",
+                    "label": "2"
+                }
+            ]
+        },
+        {
+            "type": "range",
+            "id": "sibling_products_limit",
+            "label": "Number of Products to Show",
+            "min": 3,
+            "max": 12,
+            "step": 1,
+            "default": 6
+        }
+    ],
+    "presets": [{
+        "name": "Sibling Products"
+    }]
+}
+{% endschema %}
