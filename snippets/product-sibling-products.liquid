@@ -36,11 +36,19 @@
                         <a href="{{ sibling_product.url }}" class="productView-siblingProduct-link">
                             {%- if sibling_product.featured_media -%}
                                 <div class="productView-siblingProduct-imageWrapper productView-siblingProduct-imageWrapper--{{ sibling_products_image_ratio }}">
+                                    {%- liquid
+                                        assign image_url = sibling_product.featured_media | image_url: width: 400
+                                        if image_url == blank
+                                            assign image_url = sibling_product.featured_media | img_url: '400x400'
+                                        endif
+                                    -%}
                                     <img 
-                                        src="{{ sibling_product.featured_media | img_url: '300x300' }}"
-                                        alt="{{ sibling_product.featured_media.alt | escape }}"
+                                        src="{{ image_url }}"
+                                        alt="{{ sibling_product.featured_media.alt | default: sibling_product.title | escape }}"
                                         loading="lazy"
                                         class="productView-siblingProduct-img"
+                                        width="400"
+                                        height="400"
                                     />
                                 </div>
                             {%- else -%}
