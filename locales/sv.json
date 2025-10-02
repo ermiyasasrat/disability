@@ -299,7 +299,7 @@
       "shop_now": "Handla nu",
       "select_options": "Välj alternativ",
       "select_options_plus": "+ Välj alternativ",
-      "sub_total": "Lägg till i vagnen - {{ value }}",
+      "sub_total": "Donera - {{ value }}",
       "hot_stock": "Skynda sig!  {{ inventory }} vänster",
       "hot_stock_2": "Snälla skynda dig!  {{ inventory }} kvar i lager",
       "warning_quantity": "Maximal mängd: {{ inventory}}",

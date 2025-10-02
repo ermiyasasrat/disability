@@ -299,7 +299,7 @@
       "shop_now": "Vásároljon most",
       "select_options": "Válasszon lehetőségeket",
       "select_options_plus": "+ Válassza ki a beállításokat",
-      "sub_total": "Hozzáadás a kosárhoz - {{ value }}",
+      "sub_total": "Adományoz - {{ value }}",
       "hot_stock": "Siess!  {{ inventory }} bal oldali",
       "hot_stock_2": "Kérem, siess!  {{ inventory }} maradt raktáron",
       "warning_quantity": "Maximális mennyiség: {{ inventory}}",
