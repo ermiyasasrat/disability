@@ -387,9 +387,9 @@ body.layout_rtl .toolbar-main svg {
 .card-information .card-review .spr-badge-caption {
   display: none;
 }
-.card-product {
+/* .card-product {
   padding-bottom: var(--product-image-spacing-bottom);
-}
+} */
 .card-product .card-media {
   display: block;
   position: relative;

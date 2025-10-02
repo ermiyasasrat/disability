@@ -45,6 +45,7 @@
   background: #ffffff;
   display: flex;
   align-items: center;
+  flex-direction: column;
   padding: 15px;
   position: relative;
 }
@@ -307,8 +308,12 @@
 }
 
 /* Accessibility */
+.full-unstyled-link {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+}
 .sibling-product-card .full-unstyled-link:focus {
-  outline: 2px solid #007bff;
   outline-offset: 2px;
 }
 
