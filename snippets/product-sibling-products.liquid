@@ -1,0 +1,76 @@
+{%- liquid
+    assign sibling_products_title = block.settings.sibling_products_title | default: 'Related Products'
+    assign sibling_products_limit = block.settings.sibling_products_limit | default: 4
+    assign sibling_products_source = block.settings.sibling_products_source | default: 'collection'
+    assign sibling_products_collection = block.settings.sibling_products_collection
+    assign show_sibling_products_price = block.settings.show_sibling_products_price | default: true
+    assign show_sibling_products_vendor = block.settings.show_sibling_products_vendor | default: false
+    assign sibling_products_image_ratio = block.settings.sibling_products_image_ratio | default: 'square'
+    
+    assign sibling_products = blank
+    
+    if sibling_products_source == 'collection' and sibling_products_collection != blank
+        assign sibling_products = sibling_products_collection.products | where: 'id', '!=', product.id | limit: sibling_products_limit
+    elsif sibling_products_source == 'related'
+        assign sibling_products = product.related_products | limit: sibling_products_limit
+    elsif sibling_products_source == 'same_vendor'
+        assign sibling_products = collections.all.products | where: 'vendor', product.vendor | where: 'id', '!=', product.id | limit: sibling_products_limit
+    elsif sibling_products_source == 'same_type'
+        assign sibling_products = collections.all.products | where: 'type', product.type | where: 'id', '!=', product.id | limit: sibling_products_limit
+    endif
+-%}
+
+{%- if sibling_products.size > 0 -%}
+    <div class="productView-siblingProducts" 
+         style="--spacing-top: {{ block.settings.spacing_top | default: 20 | append: 'px' }};
+                --spacing-bottom: {{ block.settings.spacing_bottom | default: 20 | append: 'px' }};">
+        
+        {%- if sibling_products_title != blank -%}
+            <h3 class="productView-siblingProducts-title">{{ sibling_products_title }}</h3>
+        {%- endif -%}
+        
+        <div class="productView-siblingProducts-grid">
+            {%- for sibling_product in sibling_products -%}
+                <div class="productView-siblingProduct-item">
+                    <div class="productView-siblingProduct-image">
+                        <a href="{{ sibling_product.url }}" class="productView-siblingProduct-link">
+                            {%- if sibling_product.featured_media -%}
+                                <div class="productView-siblingProduct-imageWrapper productView-siblingProduct-imageWrapper--{{ sibling_products_image_ratio }}">
+                                    <img 
+                                        src="{{ sibling_product.featured_media | img_url: '300x300' }}"
+                                        alt="{{ sibling_product.featured_media.alt | escape }}"
+                                        loading="lazy"
+                                        class="productView-siblingProduct-img"
+                                    />
+                                </div>
+                            {%- else -%}
+                                <div class="productView-siblingProduct-imageWrapper productView-siblingProduct-imageWrapper--{{ sibling_products_image_ratio }} productView-siblingProduct-imageWrapper--placeholder">
+                                    {{ 'product-1' | placeholder_svg_tag: 'productView-siblingProduct-img' }}
+                                </div>
+                            {%- endif -%}
+                        </a>
+                    </div>
+                    
+                    <div class="productView-siblingProduct-info">
+                        {%- if show_sibling_products_vendor and sibling_product.vendor != blank -%}
+                            <div class="productView-siblingProduct-vendor">{{ sibling_product.vendor }}</div>
+                        {%- endif -%}
+                        
+                        <h4 class="productView-siblingProduct-title">
+                            <a href="{{ sibling_product.url }}">{{ sibling_product.title }}</a>
+                        </h4>
+                        
+                        {%- if show_sibling_products_price -%}
+                            <div class="productView-siblingProduct-price">
+                                {%- if sibling_product.compare_at_price > sibling_product.price -%}
+                                    <span class="productView-siblingProduct-price-compare">{{ sibling_product.compare_at_price | money }}</span>
+                                {%- endif -%}
+                                <span class="productView-siblingProduct-price-current">{{ sibling_product.price | money }}</span>
+                            </div>
+                        {%- endif -%}
+                    </div>
+                </div>
+            {%- endfor -%}
+        </div>
+    </div>
+{%- endif -%}
