@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -296,20 +305,6 @@
             "spacing_top": 0,
             "spacing_bottom": 0
           }
-        },
-        "sibling-products-block": {
-          "type": "sibling_products",
-          "settings": {
-            "sibling_products_title": "Related Products",
-            "sibling_products_source": "collection",
-            "sibling_products_collection": "",
-            "sibling_products_limit": 4,
-            "sibling_products_image_ratio": "square",
-            "show_sibling_products_price": true,
-            "show_sibling_products_vendor": false,
-            "spacing_top": 30,
-            "spacing_bottom": 30
-          }
         }
       },
       "block_order": [
@@ -336,8 +331,7 @@
         "dc4b6986-e274-47d6-bc63-d9deab6211d7",
         "c308b6ed-926b-44c6-abd4-ea5bc0cdf499",
         "928ca58c-976c-4d1f-88d0-fff5456d2cf5",
-        "a2dc0e06-db32-4ce9-bc95-f6ab0ae9a032",
-        "sibling-products-block"
+        "a2dc0e06-db32-4ce9-bc95-f6ab0ae9a032"
       ],
       "settings": {
         "container": "container",
