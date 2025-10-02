@@ -299,7 +299,7 @@
       "shop_now": "Nakupujte hned",
       "select_options": "Vyberte možnosti",
       "select_options_plus": "+ Vyberte možnosti",
-      "sub_total": "Přidat do košíku - {{ value }}",
+      "sub_total": "Darovat - {{ value }}",
       "hot_stock": "Pospěšte si!  {{ inventory }} vlevo",
       "hot_stock_2": "Prosím, pospěšte!  {{ inventory }} zůstal na skladě",
       "warning_quantity": "Maximální množství: {{ inventory}}",

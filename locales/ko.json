@@ -299,7 +299,7 @@
       "shop_now": "지금 쇼핑하십시오",
       "select_options": "옵션을 선택하십시오",
       "select_options_plus": "+ 옵션을 선택하십시오",
-      "sub_total": "카트에 추가 - {{ value }}",
+      "sub_total": "기부하기 - {{ value }}",
       "hot_stock": "서둘러요!  {{ inventory }} 왼쪽",
       "hot_stock_2": "서둘러!  {{ inventory }} 재고가 남아 있습니다",
       "warning_quantity": "최대 수량 : {{ inventory}}",

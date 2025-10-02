@@ -299,7 +299,7 @@
       "shop_now": "Handle nå",
       "select_options": "Velg alternativer",
       "select_options_plus": "+ Velg alternativer",
-      "sub_total": "Legg til i handlekurven - {{ value }}",
+      "sub_total": "Doner - {{ value }}",
       "hot_stock": "Skynd deg!  {{ inventory }} Igjen",
       "hot_stock_2": "Vennligst skynd deg!  {{ inventory }} igjen på lager",
       "warning_quantity": "Maksimal mengde: {{ inventory}}",
