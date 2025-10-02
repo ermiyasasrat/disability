@@ -1,0 +1,815 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "general": {
+    "text": {
+      "search": "Поиск",
+      "my_account": "Мой счет",
+      "wishlist": "Список желаний",
+      "cart": "Тележка"
+    },
+    "search": {
+      "search": "Поиск",
+      "title": "Поиск",
+      "close": "Закрывать",
+      "search_product": "Поиск продуктов ...",
+      "search_the_store": "Поиск в магазине",
+      "search_the_store_2": "Поиск всего магазина здесь ...",
+      "im_looking_for": "Я ищу",
+      "label": "Поиск метки",
+      "search_result_title": "Результаты продукта",
+      "search_no_result": "Искать",
+      "search_more": "Поиск больше",
+      "view_all": "Просмотреть все результаты ({{ count }})"
+    },
+    "my_account": "Мой счет",
+    "wishlist": "Список желаний",
+    "cart": {
+      "cart": "Тележка",
+      "shopping_cart": "Корзина",
+      "view": "Посмотреть мою тележку ({{ count }})",
+      "item_added": "Товар добавлен в вашу корзину",
+      "shipping_calculator_button": "Рассчитайте доставку",
+      "shipping_calculator_calculating": "Расчет ...",
+      "shipping_calculator_error_message": "Ошибка: введите информацию о правой доставке",
+      "shipping_calculator_success_many_rates": {
+        "there_are": "Есть",
+        "shipping_rates_available_for": "Ставки доставки доступны для",
+        "starting_at": ", начиная с"
+      },
+      "shipping_calculator_success_one_rate": "Есть одна ставка доставки, доступная для",
+      "shipping_calculator_success_no_rate": "Для этого заказа и пункта назначения нет ставки доставки.",
+      "shipping_calculator_success_at": "в",
+      "cart_countdown": "Пожалуйста, спешите! ",
+      "cart_countdown_minutes": "минуты",
+      "note": "Дополнительные комментарии",
+      "note_placeholder": "Специальная инструкция для продавца ...",
+      "secure_text": "Безопасная гарантия покупок",
+      "save": "Сохранять",
+      "cancel": "Отмена",
+      "gift_cart_add": "Добавлять",
+      "gift_cart_adding": "Добавление ...",
+      "add_a_gift_wrap": "Добавить подарочную упаковку",
+      "order_summary": "Резюме заказа",
+      "subtotal": "Подтотальный",
+      "shipping": "Оценить доставку",
+      "coupon_code": "Код купона",
+      "total": "Общий:",
+      "coupon_code_text": "Код купона будет работать на странице оформления заказа",
+      "estimate_shipping": "Оценить ставки доставки",
+      "country": "Страна/регион",
+      "state": "Состояние",
+      "zip_code": "Почтовый индекс",
+      "postal_code": "Почтовый индекс",
+      "enter_coupo_code": "Введите код купона",
+      "soldout_text": "распроданный",
+      "already_text": "все",
+      "are_saving": "Скидка:"
+    },
+    "breadcrumb": {
+      "home": "Дом",
+      "wishlist": "Список желаний",
+      "collection_list": "Коллекция магазина",
+      "product_text": "Продукция"
+    },
+    "common": {
+      "close": "Закрывать",
+      "menu": "Меню",
+      "categories": "Категории",
+      "log_in": "Авторизоваться",
+      "account": "Счет",
+      "search": "Поиск",
+      "wishlist": "Список желаний",
+      "warning_title": "Это просто предупреждение"
+    },
+    "password_page": {
+      "login_form_heading": "Введите магазин, используя пароль:",
+      "login_password_button": "Введите с помощью пароля",
+      "login_form_password_label": "Пароль",
+      "login_form_password_placeholder": "Ваш пароль",
+      "login_form_error": "Неправильный пароль!",
+      "login_form_submit": "Входить",
+      "modal": "Пароль модал",
+      "admin_link_html": "Вы владелец магазина? <a href=\"/admin\" class=\"link underlined-link\">Войдите здесь</a>",
+      "powered_by_shopify_html": "Этот магазин будет оснащен {{ shopify }}",
+      "label": "Ранний доступ к доступу",
+      "label_2": "Ранний доступ к доступу*",
+      "input": "Пароль раннего доступа ...",
+      "input_2": "Введите пароль",
+      "submit": "Входить"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Поделиться на Facebook",
+        "share_on_twitter": "Твитнуть в Твиттере",
+        "share_on_pinterest": "Пынать на Pinterest"
+      },
+      "links": {
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "pinterest": "Pinterest",
+        "instagram": "Instagram",
+        "tumblr": "Tumblr",
+        "snapchat": "Snapchat",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "tiktok": "Тикток",
+        "google_plus": "Google Plus"
+      }
+    },
+    "continue_shopping": "Продолжить покупки",
+    "back_to_previous_page": "Возвращаться",
+    "pagination": {
+      "label": "Страница",
+      "page": "Страница {{ number }}",
+      "next": "Следующий",
+      "previous": "Предыдущий",
+      "prev": "Предыдущий"
+    },
+    "share": {
+      "copy_to_clipboard": "Ссылка копирования",
+      "share": "Делиться",
+      "share_url": "Связь",
+      "success_message": "Ссылка скопирована в буфер обмена!"
+    },
+    "navigation": {
+      "go_to": "Идти в",
+      "new_label": "Новый",
+      "sale_label": "Распродажа",
+      "hot_label": "Горячий",
+      "all": "Все"
+    },
+    "button_load_more": {
+      "default": "Показать больше",
+      "loading": "Загрузка ...",
+      "view_all": "Посмотреть все коллекции",
+      "no_more": "Нет больше продукта"
+    }
+  },
+  "brands_page": {
+    "general": {
+      "az_title": "Бренды a - z",
+      "all": "Все"
+    }
+  },
+  "newsletter": {
+    "label": "Ваша электронная почта",
+    "placeholder": "Введите свой адрес электронной почты",
+    "placeholder_2": "Ваш электронный адрес",
+    "success": "Спасибо за подписку!",
+    "error": "Это письмо было зарегистрировано!",
+    "button_label": "Представлять на рассмотрение",
+    "button_label_2": "Подпишите меня",
+    "start_now": "Начни сейчас",
+    "dont_miss_out_this_sale": "Не пропустите эту продажу"
+  },
+  "accessibility": {
+    "skip_to_text": "Пропустить контент",
+    "skip_to_product_info": "Пропустить информацию о продукте",
+    "close": "Закрывать",
+    "unit_price_separator": "перемещение",
+    "vendor": "Продавец:",
+    "error": "Ошибка",
+    "refresh_page": "Выбор выбора приводит к обновлению полной страницы.",
+    "link_messages": {
+      "new_window": "Открывается в новом окне.",
+      "external": "Открывает внешний веб -сайт."
+    },
+    "of": "из",
+    "next_slide": "Скользит правильно",
+    "previous_slide": "Слайд влево",
+    "loading": "Загрузка ..."
+  },
+  "blogs": {
+    "article": {
+      "blog": "Блог",
+      "read_more_title": "Читать далее: {{ title }}",
+      "read_more": "Читать далее",
+      "author": "{{ author }}",
+      "text_by": "К",
+      "on": "На",
+      "comments": {
+        "one": "{{ count }} комментарий",
+        "other": "{{ count }} Комментарии"
+      },
+      "moderated": "Обратите внимание, что комментарии должны быть одобрены до их публикации.",
+      "moderated-all": "Все комментарии в блоге проверяются до публикации",
+      "comment_form_title": "Оставьте ответ",
+      "name": "Ваше имя*",
+      "email": "Ваша электронная почта*",
+      "message": "Ваш комментарий здесь ...",
+      "post": "Опубликовать комментарий",
+      "back_to_blog": "Вернуться в блог",
+      "share": "Поделиться этой статьей",
+      "success": "Ваш комментарий был успешно опубликован! ",
+      "success_moderated": "Ваш комментарий был успешно опубликован. ",
+      "by": "к",
+      "featured": "показан",
+      "older_post": "Старый пост",
+      "newer_post": "Новый пост",
+      "prev_post": "Предварительный пост",
+      "next_post": "Следующий пост",
+      "tags": "Теги:"
+    }
+  },
+  "onboarding": {
+    "product_title": "Пример заголовок продукта",
+    "collection_title": "Имя вашей коллекции"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Добавить в корзину",
+      "add_to_cart2": "<svg version='1.1' id='OBJECTS' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'viewBox='0 0 383.7 380.1' enable-background='new 0 0 383.7 380.1' xml:space='preserve'><g><path fill='#222222' d='M380.4,97.2c-3-3.8-7.5-6-12.3-6H88.5L69,12c-1.7-7-8-12-15.2-12H15.6C7,0,0,7.1,0,15.8c0,8.7,7,15.8,15.6,15.8h26l64.2,261.3c0.4,1.8,1.2,3.4,2.1,4.9c0.6,0.9,1.4,1.6,2.2,2.4c0.4,0.4,0.8,1,1.3,1.4c1.2,1,2.6,1.7,4.1,2.3c0.1,0.1,0.2,0.2,0.2,0.2c1.8,0.6,3.5,0.9,5.3,0.9l0.1,0h202.3c7.2,0,13.4-4.9,15.2-12l44.7-182.1C384.4,106,383.4,101.1,380.4,97.2z M311.1,273.3h-178l-37-150.5h251.9L311.1,273.3z'/><path fill='#222222' d='M135.4,327.8L135.4,327.8c-14.3,0-25.9,11.7-25.9,26.1c0,14.4,11.6,26.1,25.9,26.1h0c14.3,0,25.9-11.7,25.9-26.1C161.3,339.5,149.7,327.8,135.4,327.8z'/><path fill='#222222' d='M308.9,327.8L308.9,327.8c-14.3,0-25.9,11.7-25.9,26.1c0,14.4,11.6,26.1,25.9,26.1h0c14.3,0,25.9-11.7,25.9-26.1C334.8,339.5,323.2,327.8,308.9,327.8z'/></g></svg>",
+      "adding_to_cart": "Добавление в корзину ...",
+      "add_all_to_cart": "Добавить все в корзину",
+      "adding_all_to_cart": "Добавление всех в корзину ...",
+      "added_to_cart": "Добавлен в корзину",
+      "add_to_cart_message": "Вы должны выбрать хотя бы один продукт, чтобы добавить!",
+      "add_to_cart_success_message": "добавлен в вашу корзину.",
+      "description": "Описание",
+      "on_sale": "Распродажа",
+      "product_variants": "Варианты продукта",
+      "details": "Подробности",
+      "submit": "Представлять на рассмотрение",
+      "cancel": "Отмена",
+      "select_variant": "Выберите параметры",
+      "more_sizes": "Доступно больше размеров",
+      "measurements": "Измерения",
+      "media": {
+        "media_alt": "Загрузить мультимедиа в галерею просмотр, {{ mediaAlt }}",
+        "video_alt": "Загрузить видео в галерею просмотр {{ mediaAlt }}",
+        "model_alt": "Загрузить 3D -модель в галерею просмотр {{ mediaAlt }}"
+      },
+      "add": {
+        "label": "Добавить больше",
+        "label__2": "Добавлять"
+      },
+      "quantity": {
+        "label": "Количество",
+        "label_1": "Количество:",
+        "label__2": "Количество:",
+        "input_label": "Количество для {{ product }}",
+        "increase": "Увеличить количество для {{ product }}",
+        "decrease": "Уменьшить количество для {{ product }}"
+      },
+      "pickup_availability": {
+        "view_store_info": "Посмотреть информацию о магазине",
+        "check_other_stores": "Проверьте доступность в других магазинах",
+        "pick_up_available": "Пикап доступен",
+        "pick_up_available_at_html": "Пикап доступен в <span class=\"strong\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Пикап в настоящее время недоступен в <span class=\"strong\">{{ location_name }}</span>",
+        "unavailable": "Не удалось загрузить доступность пикапа",
+        "refresh": "Обновлять"
+      },
+      "price": {
+        "from_price_html": "<span class=\"text\">От</span> {{ price }}",
+        "regular_price": "Обычная цена",
+        "sale_price": "Цена продажи",
+        "unit_price": "Цена за единицу товара",
+        "saved_price_html": "Сохранять {{ price }}"
+      },
+      "read_less": "Читать меньше",
+      "read_more": "Читать далее",
+      "share": "Поделиться этим продуктом",
+      "sold_out": "Распроданный",
+      "sold_out_message": "Этот вариант распродан!",
+      "custom": "Пользовательская метка",
+      "new": "Новый",
+      "bundle": "Пучок",
+      "unavailable": "Недоступен",
+      "unavailable_message": "Этот вариант недоступен!",
+      "out_of_stock": "Распродано",
+      "vendor": "Продавец",
+      "video_exit_message": "{{ title }} Открывает полноэкранное видео в том же окне.",
+      "xr_button": "Посмотреть в вашем пространстве",
+      "xr_button_label": "Просмотреть в вашем пространстве загружает элемент в окно дополненной реальности",
+      "pre_order": "Предварительный заказ",
+      "quick_view": "Быстрый вид",
+      "quick_add_cart": "Добавить в корзину",
+      "quick_view_2": "Быстрый вид",
+      "quick_shop": "Быстрое добавление",
+      "select": "Выберите {{ name }}",
+      "shop_now": "Делайте покупки сейчас",
+      "select_options": "Выберите варианты",
+      "select_options_plus": "+ Выберите параметры",
+      "sub_total": "Добавить в корзину - {{ value }}",
+      "hot_stock": "Торопиться!  {{ inventory }} левый",
+      "hot_stock_2": "Пожалуйста, поторопись!  {{ inventory }} оставлен в наличии",
+      "warning_quantity": "Максимальное количество: {{ inventory}}",
+      "in_stock": "В наличии",
+      "many_in_stock": "Много в наличии",
+      "on_sale_text": "Распродажа",
+      "off_text": " выключенный",
+      "sold_in_last": {
+        "text_1": "Продается в последнем",
+        "text_2": "часы"
+      },
+      "text": {
+        "sku": "Sku:",
+        "categories": "Категории:",
+        "tags": "Теги:",
+        "vendor": "Продавец:",
+        "availability": "Доступность:",
+        "type": "Тип продукта:"
+      },
+      "show_options": "Показать варианты",
+      "hide_options": "Скрыть варианты",
+      "adding": "Добавление",
+      "thank_you": "Спасибо",
+      "add_more": "Добавить больше",
+      "cart_feedback": "Добавлен",
+      "see_details": "Просмотреть полную информацию",
+      "bundle_block": {
+        "add_all_to_cart": "Добавить все в корзину",
+        "add_item_to_cart": "Добавить ([item]) элемент в корзину",
+        "add_items_to_cart": "Добавить ([item]) предметы в корзину",
+        "include": "включать",
+        "included": "включая",
+        "select_options": "Выберите опцию",
+        "total_price": "Общая цена:"
+      }
+    },
+    "modal": {
+      "label": "СМИ галерея"
+    }
+  },
+  "portfolio_page": {
+    "general": {
+      "all": "Все"
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Ой! Страница не найдена",
+      "subtext": "404",
+      "description": "Извини! ",
+      "button": "Вернуться в магазин"
+    },
+    "search": {
+      "no_results": "Не было получено результатов для «{{ terms }}” ",
+      "search_result_title_2": "Есть {{ count }} Страницы (ы) и статьи для '{{ terms }}'",
+      "view": "Вид {{ type }}",
+      "page": "Страница",
+      "results_with_count": {
+        "one": "{{ count }} результат найден для «{{ terms }}”",
+        "other": "{{ count }} Результаты, найденные для «{{ terms }}”"
+      },
+      "title": "Поиск продуктов на нашем сайте",
+      "text": "Поиск продуктов на нашем сайте"
+    },
+    "cart": {
+      "cart": "Тележка"
+    },
+    "contact": {
+      "form": {
+        "name": "Ваше имя*",
+        "firstname": "Имя*",
+        "lastname": "Фамилия*",
+        "email": "Ваша электронная почта*",
+        "phone": "Ваш телефон*",
+        "comment": "Ваше сообщение здесь ...",
+        "date": "Дата",
+        "how_many_persons": "Сколько человек?",
+        "send": "Отправить сообщение",
+        "book_now": "Забронируйте сейчас",
+        "post_success": "Спасибо, что связались с нами. ",
+        "error_heading": "Пожалуйста, отрегулируйте следующее:"
+      }
+    }
+  },
+  "faqs": {
+    "general": {
+      "all": "Все",
+      "filter": "Фильтр по теме"
+    }
+  },
+  "portfolio": {
+    "filter": "Фильтр",
+    "close": "Закрывать",
+    "tab_all": "Вкладка, чтобы показать все галереи",
+    "tab": "Tab to Filter Gallery"
+  },
+  "sections": {
+    "header": {
+      "announcement": "Объявление",
+      "menu": "Меню",
+      "cart_count": {
+        "one": "{{ count }} элемент",
+        "other": "{{ count }} предметы"
+      }
+    },
+    "term_condition": "Условия и условия",
+    "cart": {
+      "title": "Ваша тележка",
+      "caption": "Корзины предметы",
+      "checkout": "Проверить",
+      "proceed_to_checkout": "Перейти к оформлению заказа",
+      "my_cart": "Корзина",
+      "items": "предметы",
+      "view_cart": "Посмотреть корзину",
+      "edit_title": "Удалять {{ title }}",
+      "edit_cart_title": "Редактировать вариант",
+      "remove_title": "Удалять {{ title }}",
+      "items_in_your_cart": "{{ count }} предметы в вашей корзине",
+      "subtotal": "Подтотальный",
+      "new_subtotal": "Новый подтотальный",
+      "note": "Закажите специальные инструкции",
+      "continue_shopping": "Продолжить покупки",
+      "shipping": "Перевозки",
+      "shipping_text": "Налоги и плата за доставку будут рассчитаны при оформлении заказа",
+      "empty": "Ваша тележка пуста",
+      "empty_des": "Прежде чем приступить к оформлению заказа, вы должны добавить некоторые продукты в корзину для покупок. ",
+      "title_collection": "Вам также может понравиться",
+      "cart_error": "При обновлении вашей корзины была ошибка. ",
+      "cart_quantity_error_html": "Вы можете добавить только [количество] этого предмета в свою корзину.",
+      "cart_quantity_error_alert": "Вы можете только добавить {{maxQuantity}} этого продукта в вашу корзину",
+      "cart_quantity_error_alert_2": "Количество этого продукта недостаточно.",
+      "quick_cart": "Быстрая тележка",
+      "taxes_and_shipping_policy_at_checkout_html": "Налоги и <a href=\"{{ link }}\">перевозки</a> рассчитывается при оформлении",
+      "taxes_included_but_shipping_at_checkout": "Налог включен и доставка, рассчитанная при оформлении заказа",
+      "taxes_included_and_shipping_policy_html": "Налог включен. <a href=\"{{ link }}\">Перевозки</a> рассчитывается при оформлении.",
+      "taxes_and_shipping_at_checkout": "Налоги и доставка, рассчитанные при оформлении оформления",
+      "headings": {
+        "product": "Продукт",
+        "price": "Цена",
+        "total": "Общий",
+        "quantity": "Количество",
+        "remove": "Удалять"
+      },
+      "update": "Обновлять",
+      "upsell": "Следующие элементы были добавлены в вашу корзину:",
+      "your_order": "Ваш заказ"
+    },
+    "footer": {
+      "payment": "Методы оплаты"
+    },
+    "featured_blog": {
+      "view_all": "Просмотреть все",
+      "onboarding_title": "Пост в блоге",
+      "onboarding_content": "Дайте вашим клиентам краткое изложение вашего сообщения в блоге"
+    },
+    "featured_collection": {
+      "view_all": "Просмотреть все",
+      "view_all_label": "Посмотреть все продукты в {{ collection_name }} коллекция"
+    },
+    "collection_list": {
+      "title": "Коллекции",
+      "view_all": "Просмотреть все",
+      "count": "{{ count }} продукция"
+    },
+    "collection_template": {
+      "all_tags": "Все продукты",
+      "apply": "Применять",
+      "clear": "Прозрачный",
+      "clear_all": "Очистить все",
+      "empty": "Не найдено продуктов",
+      "end_count": " из {{ count }} результаты",
+      "from": "От",
+      "filter_and_sort": "Фильтруя и сортируйте",
+      "filter_by_label": "Фильтр за",
+      "filter_button": "Фильтр",
+      "filters_selected": "{{ count }} выбран",
+      "item_per_page": "Предметы на страницу",
+      "load_more": "Загружать больше",
+      "show_more": "Показать больше",
+      "show_less": "Показывать меньше",
+      "show_all": "Покажите все",
+      "loading_more": "Загрузка больше",
+      "no_more": "Нет больше продукта",
+      "max": "Максимум",
+      "max_price": "Самая высокая цена {{ price }}",
+      "min": "Мин",
+      "range": "Диапазон",
+      "product_count": "Показ {{ count }} из {{ total }} продукция",
+      "read_more": "Читать далее",
+      "read_less": "Читать меньше",
+      "refined_by": "Усовершенствовано",
+      "reset": "Прозрачный",
+      "start_count": "Показ",
+      "sort_button": "Сортировка",
+      "sort_by_label": "Сортировать по",
+      "title": "Коллекция",
+      "to": "к",
+      "use_fewer_filters_html": "Используйте меньше фильтров или <a class=\"{{ class }}\" href=\"{{ link }}\">Очистить все</a>",
+      "view_as": "Посмотреть как",
+      "image": "Изображения",
+      "product": "Продукт",
+      "price": "Цена",
+      "qty": "QTY",
+      "options": "Параметры",
+      "show_variants": "Показать варианты",
+      "results": "результаты"
+    },
+    "collection_list_template": {
+      "product_count": "{{ count }} продукция"
+    },
+    "sidebar": {
+      "title": "Боковая панель"
+    }
+  },
+  "localization": {
+    "country_label": "Страна/регион",
+    "language_label": "Язык",
+    "update_language": "Обновление языка",
+    "update_country": "Обновление страны/региона"
+  },
+  "currency": {
+    "change_text": "Валюта магазина изменилась на",
+    "currency": "Валюта"
+  },
+  "customer": {
+    "account": {
+      "welcome": "Привет, {{ name }}",
+      "title": "Счет",
+      "my_account": "Мой счет",
+      "details": "Детали счета",
+      "view_addresses": "Просмотреть адреса",
+      "return": "Вернуться в данные учетной записи"
+    },
+    "account_fallback": "Счет",
+    "activate_account": {
+      "title": "Активировать учетную запись",
+      "subtext": "Создайте свой пароль для активации вашей учетной записи.",
+      "password": "Пароль",
+      "password_confirm": "Подтвердите пароль",
+      "submit": "Активировать учетную запись",
+      "cancel": "Приглашение в упадок"
+    },
+    "addresses": {
+      "title": "Адреса",
+      "default": "По умолчанию",
+      "address_book": "Адреса клиента",
+      "add_new": "Добавить новый адрес",
+      "edit_address": "Редактировать адрес",
+      "first_name": "Имя",
+      "last_name": "Фамилия",
+      "company": "Компания",
+      "address1": "Адрес 1",
+      "address2": "Адрес 2",
+      "city": "Город",
+      "country": "Страна/регион",
+      "province": "Провинция",
+      "zip": "Почтовый/почтовый индекс",
+      "phone": "Телефон",
+      "set_default": "Установить как адрес по умолчанию",
+      "add": "Добавить адрес",
+      "update": "Обновление адреса",
+      "cancel": "Отмена",
+      "edit": "Редактировать",
+      "delete": "Удалять",
+      "delete_confirm": "Вы уверены, что хотите удалить этот адрес?",
+      "none": "Установите свой дом и рабочие адреса, если вы еще этого не сделали."
+    },
+    "forgot_password": "Забыли пароль?",
+    "log_in": "Авторизоваться",
+    "sign_in": "Войти",
+    "or": "или",
+    "create_account": "Завести аккаунт",
+    "log_out": "Выходите из строя",
+    "hello": "Привет",
+    "my_account": "Мой счет",
+    "login_page": {
+      "cancel": "Отмена",
+      "create_account": "Зарегистрироваться",
+      "email": "Адрес электронной почты",
+      "forgot_password": "Потеряли пароль?",
+      "guest_continue": "Продолжать",
+      "guest_title": "Продолжить как гость",
+      "password": "Пароль",
+      "title": "Войти",
+      "sign_in": "Авторизоваться",
+      "submit": "Представлять на рассмотрение",
+      "register": "Зарегистрировать",
+      "text": "Пожалуйста, введите свою электронную почту и пароль ниже, чтобы получить доступ к вашей учетной записи"
+    },
+    "order": {
+      "title": "Заказ {{ name }}",
+      "date_html": "Помещен на {{ date }}",
+      "cancelled_html": "Заказ отменен на {{ date }}",
+      "cancelled_reason": "Причина: {{ reason }}",
+      "billing_address": "Адрес для выставления счета",
+      "payment_status": "Статус оплаты",
+      "shipping_address": "Адрес доставки",
+      "fulfillment_status": "Статус выполнения",
+      "discount": "Скидка",
+      "shipping": "Перевозки",
+      "tax": "Налоговый",
+      "product": "Продукт",
+      "sku": "Sku",
+      "price": "Цена",
+      "quantity": "Количество",
+      "total": "Общий",
+      "fulfilled_at_html": "Выполнен {{ date }}",
+      "track_shipment": "Отслеживать отгрузку",
+      "tracking_url": "Ссылка отслеживания",
+      "tracking_company": "Перевозчик",
+      "tracking_number": "Идентификационный номер",
+      "subtotal": "Подтотальный"
+    },
+    "orders": {
+      "title": "История заказа",
+      "order_number": "Заказ",
+      "order_number_link": "Номер заказа {{ number }}",
+      "date": "Дата",
+      "payment_status": "Статус оплаты",
+      "fulfillment_status": "Статус выполнения",
+      "total": "Общий",
+      "none": "Вы еще не разместили заказов."
+    },
+    "recover_password": {
+      "title": "Сбросить свой пароль",
+      "subtext": "Мы отправим вам электронное письмо, чтобы сбросить пароль",
+      "success": "Мы отправили вам электронное письмо по ссылке для обновления вашего пароля."
+    },
+    "register": {
+      "title": "Зарегистрироваться",
+      "first_name": "Имя",
+      "last_name": "Фамилия",
+      "email": "Электронная почта",
+      "you_email": "Ваш электронный адрес",
+      "password": "Пароль",
+      "you_password": "Ваш пароль",
+      "register": "Зарегистрировать",
+      "submit": "Завести аккаунт",
+      "text": "Пожалуйста, зарегистрируйтесь ниже, чтобы создать учетную запись"
+    },
+    "reset_password": {
+      "title": "Сбросить пароль учетной записи",
+      "subtext": "Введите новый пароль для {{ email }}",
+      "password": "Пароль",
+      "password_confirm": "Подтвердите пароль",
+      "submit": "Сбросить пароль"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Вот твой {{ value }} Подарочная карта для {{ shop }}!",
+      "subtext": "Ваша подарочная карта",
+      "gift_card_code": "Код подарочной карты",
+      "shop_link": "Продолжить покупки",
+      "remaining_html": "Оставшийся {{ balance }}",
+      "add_to_apple_wallet": "Добавить в яблочный кошелек",
+      "qr_image_alt": "QR -код - сканирование, чтобы выкупить подарочную карту",
+      "copy_code": "Копировать код",
+      "expired": "Истекший",
+      "copy_code_success": "Код скопирован успешно",
+      "print_gift_card": "Печать"
+    }
+  },
+  "wishlist": {
+    "general": {
+      "wishlist": "Списки желаний",
+      "title": "Мой список желаний",
+      "added": "Добавлен в список желаний",
+      "product_image": "Изображение",
+      "product_name": "Название продукта",
+      "price": "Цена",
+      "add_1": "Добавлять",
+      "add": "Добавить в список желаний",
+      "remove": "Удалять",
+      "share": "Поделиться своим списком пожеланий по электронной почте",
+      "empty": "Продукт не добавляется в ваш список желаний",
+      "continue_shopping": "Продолжить покупки",
+      "wishlist_title": "Ваш список желаний пуст",
+      "wishlist_desc": "Продукт не добавляется в ваш список желаний"
+    }
+  },
+  "compare": {
+    "general": {
+      "title": "Сравнивать",
+      "add": "Добавить, чтобы сравнить",
+      "added": "Добавлено, чтобы сравнить",
+      "remove_compare": "Снимите сравнение",
+      "remove_all": "Удалить все",
+      "product": "Продукт",
+      "sku": "Sku",
+      "review": "Рейтинг",
+      "description": "Описание",
+      "collection": "Коллекция",
+      "availability": "Доступность",
+      "product_type": "Тип продукта",
+      "other_details": "Другие детали",
+      "message": "Вы должны выбрать как минимум два продукта для сравнения!"
+    }
+  },
+  "someone_purcharse": {
+    "general": {
+      "text_1": "Кто -то недавно купил",
+      "text_2": "[время]",
+      "text_3": "[Место] куплено"
+    }
+  },
+  "before_you_leave": {
+    "general": {
+      "recommended_product": "Рекомендуется",
+      "back_to_store": "Вернуться в магазин",
+      "continue_shopping": "Продолжить покупки"
+    }
+  },
+  "recently_viewed": {
+    "general": {
+      "product_title": "Недавно просмотрено",
+      "no_product": "Извините, продуктов нет.",
+      "share_title": "Социальная",
+      "newsletter": "Зарегистрированная рассылка"
+    }
+  },
+  "calculator_free_shipping_message": {
+    "general": {
+      "free_shipping_message": "Бесплатная доставка для всех заказов на",
+      "free_shipping_message_1": "Вы имеете право на бесплатную доставку!",
+      "free_shipping_message_2": "Почти там, добавить",
+      "free_shipping_message_3": "больше, чтобы получить",
+      "free_shipping_message_4": "БЕСПЛАТНАЯ ДОСТАВКА!",
+      "free_shipping_1": "Бесплатно",
+      "free_shipping_2": "TBD"
+    }
+  },
+  "notify_form": {
+    "general": {
+      "label": "Уведомить меня",
+      "title": "Оставьте свою электронную почту, и мы уведомимся, как только продукт / вариант вернется в наличии",
+      "placeholder": "Вставьте свою электронную почту",
+      "submit": "Подписаться",
+      "success": "Спасибо! ",
+      "error": "Пожалуйста, используйте действительный адрес электронной почты, такой как john@example.com."
+    }
+  },
+  "ask_an_expert": {
+    "general": {
+      "text": "Спросите эксперта",
+      "name": "Ваше имя",
+      "mail": "Ваша почта",
+      "phone": "Ваш телефон",
+      "message": "Чему я могу вам помочь сегодня?",
+      "submit": "Отправить вопрос",
+      "success": "Спасибо. ",
+      "error_1": "Пожалуйста, используйте действительный адрес электронной почты, такой как john@example.com.",
+      "error_2": "Поле должно быть заполнено перед отправкой этой формы.",
+      "customer_name": "Мое имя",
+      "customer_mail": "Моя почта",
+      "customer_phone": "Мой телефон",
+      "customer_message": "Мое сообщение"
+    }
+  },
+  "countdown": {
+    "general": {
+      "text": "Торопиться! ",
+      "day": "Дни",
+      "hour": "Часы",
+      "min": "Мин",
+      "sec": "Секунды",
+      "d": "Дни",
+      "h": "Часы",
+      "m": "Мин",
+      "s": "Секунды",
+      "day_2": "Дни",
+      "hour_2": "Часы",
+      "min_2": "Мин",
+      "sec_2": "Секунды",
+      "days": "Дни",
+      "hours": "Часы",
+      "mins": "Мин",
+      "secs": "Секунды"
+    }
+  },
+  "customer_viewing": {
+    "general": {
+      "text": "{{ number }} Клиенты просматривают этот продукт"
+    }
+  },
+  "size_chart": {
+    "general": {
+      "title": "Диаграмма размера",
+      "text": "Руководство по размеру"
+    }
+  },
+  "compare_color": {
+    "general": {
+      "title": "Сравните цвет",
+      "text": "Нажмите на цвет / рисунок, чтобы сравнить, нажмите и перетащите изображения, чтобы переупорядочить"
+    }
+  },
+  "lookbook": {
+    "view_all": "Просмотреть весь взгляд",
+    "shop_look": "Покупайте внешний вид"
+  },
+  "bulk_editor_page": {
+    "general": {
+      "all_collection": "Весь продукт",
+      "select_collection": "Выберите категорию",
+      "submit": "Отправить редактор",
+      "edit_metafields": "Редактировать Metafield в продуктах."
+    }
+  },
+  "find_a_store": {
+    "no_stores": "Извините, мы сейчас работаем над презентацией нашего магазина! "
+  }
+}

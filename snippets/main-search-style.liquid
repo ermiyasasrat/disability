@@ -1,0 +1,131 @@
+{%- liquid
+  assign colors_bg = section.settings.colors_bg
+  assign colors_bg_gradient = section.settings.colors_bg_gradient
+-%}
+
+<style>
+  :root {
+    {% if colors_bg != blank or colors_bg_gradient != blank %}
+        --body-bg: {% if colors_bg_gradient != blank %}{{ colors_bg_gradient }}{% else %}{{ colors_bg }}{% endif %};
+    {% endif %}
+
+    {% if sidebar_heading_font == 'font_1' %}
+        --sidebar-heading-font: var(--font-heading-family);
+    {% elsif sidebar_heading_font == 'font_2' %}
+        --sidebar-heading-font: var(--font-body-family);
+    {% endif %}
+
+    --sidebar-heading-font-size: {{ section.settings.sidebar_heading_font_size | append: 'px' }};
+    --sidebar-heading-text-transform: {{ section.settings.sidebar_heading_text_transform }};
+    --sidebar-heading-font-weight: {{ section.settings.sidebar_heading_font_weight }};
+    --sidebar-heading-colors: {{ section.settings.sidebar_heading_colors }};
+    --sidebar-heading-space-bottom: {{ section.settings.sidebar_heading_space_bottom | append: 'px' }};
+    --sidebar-heading-space-bottom-tb: {{ section.settings.sidebar_heading_font_size | append: 'px' }};
+    --sidebar-heading-space-bottom-mb: {{ section.settings.sidebar_heading_font_size | append: 'px' }};
+    {%- for block in section.blocks -%}
+      --sidebar-button-font-size: {{ block.settings.button_font_size | append: 'px' }};
+      --sidebar-button-border: {{ block.settings.button_border | append: 'px' }};
+      --sidebar-button-text-color: {{ block.settings.button_color }};
+      --sidebar-button-bg-color: {{ block.settings.button_bg_color | color_modify: 'alpha', 0.8 }};
+      --sidebar-button-text-hover-color: {{ block.settings.button_hover_color }};
+      --sidebar-button-bg-hover-color: {{ block.settings.button_bghover_color | color_modify: 'alpha', 0.8 }};
+      --sidebar-button-border-color: {{ block.settings.button_border_color | color_modify: 'alpha', 0.8 }};
+      --sidebar-button-boder-hover-color: {{ block.settings.button_borderhover_color | color_modify: 'alpha', 0.8 }};
+    {%- endfor -%}
+
+    
+  }
+
+
+.search-main-part {
+  padding-top: {{ section.settings.mg_top_desktop | append: 'px' }};
+  padding-bottom: {{ section.settings.mg_bottom_desktop | append: 'px' }};
+}
+
+.search-main-part .container-full {
+  padding: 0px 15px;
+}
+{% if colors_bg != blank or colors_bg_gradient != blank %}
+  .search-main-part {
+    background: var(--body-bg);
+  }
+{% endif %}
+
+{%- if section.settings.sidebar_collapse != blank -%}
+  .collection-sidebar .sidebarBlock .sidebarBlock-content {
+      display: none;
+  }
+  .collection-sidebar .sidebarBlock:first-child .sidebarBlock-content {
+      display: block;
+  }
+  .collection-sidebar .sidebarBlock + .collection-filters .collection-filters__item .sidebarBlock .sidebarBlock-content {
+      display: none;
+  }
+  .collection-sidebar .sidebarBlock.refined-widgets .sidebarBlock-heading:before {
+    content: unset;
+  }
+  .collection-sidebar .sidebarBlock.refined-widgets .sidebarBlock-content {
+      display: block;
+  }
+{% endif %}
+
+{%- if section.settings.sidebar_border != blank -%}
+  .collection-sidebar .sidebarBlock {
+    border-bottom: 1px solid {{ section.settings.button_border_color }};
+    margin-bottom: {{ section.settings.sidebar_space_bottom | append: 'px' }};
+  }
+  .collection-sidebar .sidebarBlock .sidebarBlock-heading {
+    padding-bottom: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .collection-sidebar .sidebarBlock .sidebarBlock-heading:before {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Capa_1' enable-background='new 0 0 551.13 551.13' height='512' viewBox='0 0 551.13 551.13' width='512'%3E%3Cpath style='fill: %233c3c3c;' d='m275.565 361.679-223.897-223.896h-51.668l275.565 275.565 275.565-275.565h-51.668z'%3E%3C/path%3E%3C/svg%3E");
+      background-position: center;
+      background-size: 100%;
+      width: 11px;
+      height: 6px;
+      display: inline-block;
+      top: calc(50% - 0px);
+      position: absolute;
+      right: 0;
+      transition: all .5s ease;
+      transform: translateY(-50%);
+  }
+  .collection-sidebar .sidebarBlock.open .sidebarBlock-heading:before {
+      transform: translateY(-50%) rotate(-180deg);
+  }
+  .collection-sidebar .sidebarBlock:first-child .sidebarBlock-heading:before {
+      transform: translateY(-50%) rotate(180deg);
+  }
+  .collection-sidebar .sidebarBlock.open:first-child .sidebarBlock-heading:before {
+      transform: translateY(-50%) rotate(0deg);
+  }
+  .collection-sidebar .sidebarBlock + .collection-filters .collection-filters__item .sidebarBlock .sidebarBlock-heading:before {
+      transform: translateY(-50%) rotate(0deg);
+  }
+  .collection-sidebar .sidebarBlock + .collection-filters .collection-filters__item .sidebarBlock.open .sidebarBlock-heading:before {
+      transform: translateY(-50%) rotate(180deg);
+  }
+  .collection-sidebar .sidebarBlock .sidebarBlock-content{
+    padding-top: var(--sidebar-heading-space-bottom);
+  }
+{% endif %}
+.collection-sidebar .sidebarBlock {
+  padding-bottom: {{ section.settings.sidebar_space_bottom | append: 'px' }};
+}
+
+@media (max-width: 1199px) {
+  .search-main-part {
+    padding-top: {{ section.settings.mg_top_tablet | append: 'px' }};
+    padding-bottom: {{ section.settings.mg_bottom_tablet | append: 'px' }};
+  }
+}
+@media (max-width: 767px) {
+  .search-main-part {
+    padding-top: {{ section.settings.mg_top_mobile | append: 'px' }};
+    padding-bottom: {{ section.settings.mg_bottom_mobile | append: 'px' }};
+  }
+}
+</style>

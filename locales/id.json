@@ -1,0 +1,815 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "general": {
+    "text": {
+      "search": "Mencari",
+      "my_account": "Akun saya",
+      "wishlist": "Daftar Keinginan",
+      "cart": "Keranjang"
+    },
+    "search": {
+      "search": "Mencari",
+      "title": "Mencari",
+      "close": "Menutup",
+      "search_product": "Produk pencarian ...",
+      "search_the_store": "Cari toko",
+      "search_the_store_2": "Cari seluruh toko di sini ...",
+      "im_looking_for": "Saya mencari",
+      "label": "Pencarian Label",
+      "search_result_title": "Hasil produk",
+      "search_no_result": "Cari",
+      "search_more": "Cari lebih banyak",
+      "view_all": "Lihat semua hasil ({{ count }})"
+    },
+    "my_account": "Akun saya",
+    "wishlist": "Daftar Keinginan",
+    "cart": {
+      "cart": "Keranjang",
+      "shopping_cart": "Keranjang belanja",
+      "view": "Lihat gerobak saya ({{ count }})",
+      "item_added": "Item ditambahkan ke keranjang Anda",
+      "shipping_calculator_button": "Hitung pengiriman",
+      "shipping_calculator_calculating": "Menghitung ...",
+      "shipping_calculator_error_message": "Kesalahan: Harap masukkan informasi pengiriman yang tepat",
+      "shipping_calculator_success_many_rates": {
+        "there_are": "Ada",
+        "shipping_rates_available_for": "tarif pengiriman tersedia untuk",
+        "starting_at": ", mulai"
+      },
+      "shipping_calculator_success_one_rate": "Ada satu tarif pengiriman yang tersedia untuk",
+      "shipping_calculator_success_no_rate": "Tidak ada tarif pengiriman yang tersedia untuk pesanan dan tujuan ini.",
+      "shipping_calculator_success_at": "pada",
+      "cart_countdown": "Tolong, cepatlah! ",
+      "cart_countdown_minutes": "menit.",
+      "note": "Komentar tambahan",
+      "note_placeholder": "Instruksi Khusus untuk Penjual ...",
+      "secure_text": "Jaminan belanja aman",
+      "save": "Menyimpan",
+      "cancel": "Membatalkan",
+      "gift_cart_add": "Menambahkan",
+      "gift_cart_adding": "Menambahkan ...",
+      "add_a_gift_wrap": "Tambahkan Bungkus Hadiah",
+      "order_summary": "Ringkasan Pesanan",
+      "subtotal": "Subtotal",
+      "shipping": "Perkirakan Pengiriman",
+      "coupon_code": "Kode kupon",
+      "total": "Total:",
+      "coupon_code_text": "Kode kupon akan berfungsi di halaman checkout",
+      "estimate_shipping": "Perkirakan tarif pengiriman",
+      "country": "Negara/wilayah",
+      "state": "Negara",
+      "zip_code": "Kode pos",
+      "postal_code": "Kode Pos",
+      "enter_coupo_code": "Masukkan kode kupon",
+      "soldout_text": "terjual habis",
+      "already_text": "semua",
+      "are_saving": "Diskon:"
+    },
+    "breadcrumb": {
+      "home": "Rumah",
+      "wishlist": "Daftar keinginan",
+      "collection_list": "Koleksi toko",
+      "product_text": "Produk"
+    },
+    "common": {
+      "close": "Menutup",
+      "menu": "Menu",
+      "categories": "Kategori",
+      "log_in": "Masuk",
+      "account": "Akun",
+      "search": "Mencari",
+      "wishlist": "Daftar Keinginan",
+      "warning_title": "Ini hanya peringatan"
+    },
+    "password_page": {
+      "login_form_heading": "Masukkan toko menggunakan kata sandi:",
+      "login_password_button": "Masukkan menggunakan kata sandi",
+      "login_form_password_label": "Kata sandi",
+      "login_form_password_placeholder": "Kata sandi Anda",
+      "login_form_error": "Kata sandi yang salah!",
+      "login_form_submit": "Memasuki",
+      "modal": "Modal Kata Sandi",
+      "admin_link_html": "Apakah Anda pemilik toko? <a href=\"/admin\" class=\"link underlined-link\">Masuk di sini</a>",
+      "powered_by_shopify_html": "Toko ini akan didukung oleh {{ shopify }}",
+      "label": "Login Akses Awal",
+      "label_2": "Login Akses Awal*",
+      "input": "Kata sandi akses awal ...",
+      "input_2": "Masukkan kata sandi",
+      "submit": "Memasuki"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Bagikan di Facebook",
+        "share_on_twitter": "Tweet di Twitter",
+        "share_on_pinterest": "Pin di Pinterest"
+      },
+      "links": {
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "pinterest": "Pinterest",
+        "instagram": "Instagram",
+        "tumblr": "Tumblr",
+        "snapchat": "Snapchat",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "tiktok": "Tiktok",
+        "google_plus": "Google Plus"
+      }
+    },
+    "continue_shopping": "Lanjutkan berbelanja",
+    "back_to_previous_page": "Kembali",
+    "pagination": {
+      "label": "Pagination",
+      "page": "Halaman {{ number }}",
+      "next": "Berikutnya",
+      "previous": "Sebelumnya",
+      "prev": "Sebelumnya"
+    },
+    "share": {
+      "copy_to_clipboard": "Salin tautan",
+      "share": "Membagikan",
+      "share_url": "Link",
+      "success_message": "Tautan disalin ke clipboard!"
+    },
+    "navigation": {
+      "go_to": "Pergi ke",
+      "new_label": "Baru",
+      "sale_label": "Penjualan",
+      "hot_label": "Panas",
+      "all": "Semua"
+    },
+    "button_load_more": {
+      "default": "Tunjukkan lebih banyak",
+      "loading": "Memuat...",
+      "view_all": "Lihat semua koleksi",
+      "no_more": "Tidak ada lagi produk"
+    }
+  },
+  "brands_page": {
+    "general": {
+      "az_title": "Merek A - Z",
+      "all": "Semua"
+    }
+  },
+  "newsletter": {
+    "label": "Email Anda",
+    "placeholder": "Masukkan alamat email Anda",
+    "placeholder_2": "Alamat email Anda",
+    "success": "Terima kasih telah berlangganan!",
+    "error": "Email ini telah terdaftar!",
+    "button_label": "Kirim",
+    "button_label_2": "Daftarkan saya",
+    "start_now": "Mulailah sekarang",
+    "dont_miss_out_this_sale": "Jangan lewatkan penjualan ini"
+  },
+  "accessibility": {
+    "skip_to_text": "Lewati Konten",
+    "skip_to_product_info": "Lewati Informasi Produk",
+    "close": "Menutup",
+    "unit_price_separator": "per",
+    "vendor": "Penjual:",
+    "error": "Kesalahan",
+    "refresh_page": "Memilih hasil pilihan dalam refresh halaman penuh.",
+    "link_messages": {
+      "new_window": "Dibuka di jendela baru.",
+      "external": "Membuka situs web eksternal."
+    },
+    "of": "dari",
+    "next_slide": "Geser ke kanan",
+    "previous_slide": "Geser ke kiri",
+    "loading": "Memuat..."
+  },
+  "blogs": {
+    "article": {
+      "blog": "Blog",
+      "read_more_title": "Baca selengkapnya: {{ title }}",
+      "read_more": "Baca selengkapnya",
+      "author": "{{ author }}",
+      "text_by": "Oleh",
+      "on": "Pada",
+      "comments": {
+        "one": "{{ count }} komentar",
+        "other": "{{ count }} Komentar"
+      },
+      "moderated": "Harap dicatat, komentar perlu disetujui sebelum dipublikasikan.",
+      "moderated-all": "Semua komentar blog diperiksa sebelum diterbitkan",
+      "comment_form_title": "Tinggalkan balasan",
+      "name": "Nama Anda*",
+      "email": "Email Anda*",
+      "message": "Komentar Anda di sini ...",
+      "post": "Posting Komentar",
+      "back_to_blog": "Kembali ke Blog",
+      "share": "Bagikan artikel ini",
+      "success": "Komentar Anda telah berhasil diposting! ",
+      "success_moderated": "Komentar Anda berhasil diposting. ",
+      "by": "oleh",
+      "featured": "ditampilkan",
+      "older_post": "Posting yang lebih tua",
+      "newer_post": "Posting yang lebih baru",
+      "prev_post": "Posting sebelumnya",
+      "next_post": "Posting berikutnya",
+      "tags": "Tag:"
+    }
+  },
+  "onboarding": {
+    "product_title": "Contoh Judul Produk",
+    "collection_title": "Nama koleksi Anda"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Tambahkan ke Keranjang",
+      "add_to_cart2": "<svg version='1.1' id='OBJECTS' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px'viewBox='0 0 383.7 380.1' enable-background='new 0 0 383.7 380.1' xml:space='preserve'><g><path fill='#222222' d='M380.4,97.2c-3-3.8-7.5-6-12.3-6H88.5L69,12c-1.7-7-8-12-15.2-12H15.6C7,0,0,7.1,0,15.8c0,8.7,7,15.8,15.6,15.8h26l64.2,261.3c0.4,1.8,1.2,3.4,2.1,4.9c0.6,0.9,1.4,1.6,2.2,2.4c0.4,0.4,0.8,1,1.3,1.4c1.2,1,2.6,1.7,4.1,2.3c0.1,0.1,0.2,0.2,0.2,0.2c1.8,0.6,3.5,0.9,5.3,0.9l0.1,0h202.3c7.2,0,13.4-4.9,15.2-12l44.7-182.1C384.4,106,383.4,101.1,380.4,97.2z M311.1,273.3h-178l-37-150.5h251.9L311.1,273.3z'/><path fill='#222222' d='M135.4,327.8L135.4,327.8c-14.3,0-25.9,11.7-25.9,26.1c0,14.4,11.6,26.1,25.9,26.1h0c14.3,0,25.9-11.7,25.9-26.1C161.3,339.5,149.7,327.8,135.4,327.8z'/><path fill='#222222' d='M308.9,327.8L308.9,327.8c-14.3,0-25.9,11.7-25.9,26.1c0,14.4,11.6,26.1,25.9,26.1h0c14.3,0,25.9-11.7,25.9-26.1C334.8,339.5,323.2,327.8,308.9,327.8z'/></g></svg>",
+      "adding_to_cart": "Menambahkan ke kereta ...",
+      "add_all_to_cart": "Tambahkan semua ke troli",
+      "adding_all_to_cart": "Menambahkan semua ke troli ...",
+      "added_to_cart": "Ditambahkan ke troli",
+      "add_to_cart_message": "Anda harus memilih setidaknya satu produk untuk ditambahkan!",
+      "add_to_cart_success_message": "ditambahkan ke keranjang belanja Anda.",
+      "description": "Keterangan",
+      "on_sale": "Penjualan",
+      "product_variants": "Varian produk",
+      "details": "Detail",
+      "submit": "Kirim",
+      "cancel": "Membatalkan",
+      "select_variant": "Pilih Opsi",
+      "more_sizes": "Lebih banyak ukuran tersedia",
+      "measurements": "Pengukuran",
+      "media": {
+        "media_alt": "Memuat media di galeri, penampil, {{ mediaAlt }}",
+        "video_alt": "Muat video di galeri penampil, {{ mediaAlt }}",
+        "model_alt": "Muat model 3D di galeri penampil, {{ mediaAlt }}"
+      },
+      "add": {
+        "label": "Tambahkan lebih banyak",
+        "label__2": "Menambahkan"
+      },
+      "quantity": {
+        "label": "Kuantitas",
+        "label_1": "Kuantitas:",
+        "label__2": "Kuantitas:",
+        "input_label": "Kuantitas untuk {{ product }}",
+        "increase": "Tingkatkan kuantitas untuk {{ product }}",
+        "decrease": "Mengurangi jumlah untuk {{ product }}"
+      },
+      "pickup_availability": {
+        "view_store_info": "Lihat informasi toko",
+        "check_other_stores": "Periksa ketersediaan di toko lain",
+        "pick_up_available": "Pickup tersedia",
+        "pick_up_available_at_html": "Pickup tersedia di <span class=\"strong\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Pickup saat ini tidak tersedia di <span class=\"strong\">{{ location_name }}</span>",
+        "unavailable": "Tidak bisa memuat ketersediaan pickup",
+        "refresh": "Menyegarkan"
+      },
+      "price": {
+        "from_price_html": "<span class=\"text\">Dari</span> {{ price }}",
+        "regular_price": "Harga reguler",
+        "sale_price": "Harga penjualan",
+        "unit_price": "Harga satuan",
+        "saved_price_html": "Menyimpan {{ price }}"
+      },
+      "read_less": "Baca lebih sedikit",
+      "read_more": "Baca selengkapnya",
+      "share": "Bagikan produk ini",
+      "sold_out": "Terjual habis",
+      "sold_out_message": "Varian ini terjual habis!",
+      "custom": "Label Kustom",
+      "new": "Baru",
+      "bundle": "Bundel",
+      "unavailable": "Tidak tersedia",
+      "unavailable_message": "Varian ini tidak tersedia!",
+      "out_of_stock": "Stok Habis",
+      "vendor": "Penjual",
+      "video_exit_message": "{{ title }} Membuka video layar penuh di jendela yang sama.",
+      "xr_button": "Lihat di Ruang Anda",
+      "xr_button_label": "Lihat di ruang Anda, memuat item di jendela augmented reality",
+      "pre_order": "Pre-order",
+      "quick_view": "Tampilan cepat",
+      "quick_add_cart": "Tambahkan ke Keranjang",
+      "quick_view_2": "Tampilan cepat",
+      "quick_shop": "Tambah Cepat",
+      "select": "Pilih a {{ name }}",
+      "shop_now": "Berbelanja sekarang",
+      "select_options": "Pilih Opsi",
+      "select_options_plus": "+ Pilih Opsi",
+      "sub_total": "Tambahkan ke Keranjang - {{ value }}",
+      "hot_stock": "Ayo cepat!  {{ inventory }} kiri",
+      "hot_stock_2": "Tolong cepat!  {{ inventory }} tersisa dalam stok",
+      "warning_quantity": "Jumlah maksimum: {{ inventory}}",
+      "in_stock": "Dalam stok",
+      "many_in_stock": "Banyak stok",
+      "on_sale_text": "Penjualan",
+      "off_text": " mati",
+      "sold_in_last": {
+        "text_1": "dijual di terakhir",
+        "text_2": "jam"
+      },
+      "text": {
+        "sku": "SKU:",
+        "categories": "Kategori:",
+        "tags": "Tag:",
+        "vendor": "Penjual:",
+        "availability": "Tersedianya:",
+        "type": "Jenis Produk:"
+      },
+      "show_options": "Tampilkan varian",
+      "hide_options": "Sembunyikan varian",
+      "adding": "Menambahkan",
+      "thank_you": "Terima kasih",
+      "add_more": "Tambahkan lebih banyak",
+      "cart_feedback": "Ditambahkan",
+      "see_details": "Lihat detail lengkap",
+      "bundle_block": {
+        "add_all_to_cart": "Tambahkan semua ke troli",
+        "add_item_to_cart": "Tambahkan ([item]) item ke troli",
+        "add_items_to_cart": "Tambahkan ([item]) item ke troli",
+        "include": "termasuk",
+        "included": "termasuk",
+        "select_options": "Pilih opsi",
+        "total_price": "Total Harga:"
+      }
+    },
+    "modal": {
+      "label": "Galeri Media"
+    }
+  },
+  "portfolio_page": {
+    "general": {
+      "all": "Semua"
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Ups! Page tidak ditemukan",
+      "subtext": "404",
+      "description": "Maaf! ",
+      "button": "Kembali ke toko"
+    },
+    "search": {
+      "no_results": "Tidak ada hasil yang ditemukan untuk “{{ terms }}\". ",
+      "search_result_title_2": "Ada {{ count }} Halaman dan artikel untuk '{{ terms }}'",
+      "view": "Melihat {{ type }}",
+      "page": "Halaman",
+      "results_with_count": {
+        "one": "{{ count }} hasil ditemukan untuk “{{ terms }}\"",
+        "other": "{{ count }} Hasil ditemukan untuk “{{ terms }}\""
+      },
+      "title": "Cari produk di situs kami",
+      "text": "Cari produk di situs kami"
+    },
+    "cart": {
+      "cart": "Keranjang"
+    },
+    "contact": {
+      "form": {
+        "name": "Nama Anda*",
+        "firstname": "Nama depan*",
+        "lastname": "Nama Belakang*",
+        "email": "Email Anda*",
+        "phone": "Ponsel Anda*",
+        "comment": "Pesan Anda di sini ...",
+        "date": "Tanggal",
+        "how_many_persons": "Berapa banyak orang?",
+        "send": "Kirim pesan",
+        "book_now": "Pesan sekarang",
+        "post_success": "Terima kasih telah menghubungi kami. ",
+        "error_heading": "Harap sesuaikan yang berikut:"
+      }
+    }
+  },
+  "faqs": {
+    "general": {
+      "all": "Semua",
+      "filter": "Filter berdasarkan topik"
+    }
+  },
+  "portfolio": {
+    "filter": "Menyaring",
+    "close": "Menutup",
+    "tab_all": "Tab untuk menampilkan semua galeri",
+    "tab": "Tab untuk memfilter galeri"
+  },
+  "sections": {
+    "header": {
+      "announcement": "Pengumuman",
+      "menu": "Menu",
+      "cart_count": {
+        "one": "{{ count }} barang",
+        "other": "{{ count }} item"
+      }
+    },
+    "term_condition": "Syarat & Ketentuan",
+    "cart": {
+      "title": "Keranjang Anda",
+      "caption": "Item gerobak",
+      "checkout": "Check-out",
+      "proceed_to_checkout": "Lanjutkan ke checkout",
+      "my_cart": "Keranjang belanja",
+      "items": "item",
+      "view_cart": "Lihat Keranjang",
+      "edit_title": "Menghapus {{ title }}",
+      "edit_cart_title": "Edit opsi",
+      "remove_title": "Menghapus {{ title }}",
+      "items_in_your_cart": "{{ count }} Item di keranjang belanja Anda",
+      "subtotal": "Subtotal",
+      "new_subtotal": "Subtotal baru",
+      "note": "Pesan instruksi khusus",
+      "continue_shopping": "Lanjutkan berbelanja",
+      "shipping": "Pengiriman",
+      "shipping_text": "Pajak dan biaya pengiriman akan dihitung saat checkout",
+      "empty": "Keranjang Anda kosong",
+      "empty_des": "Sebelum melanjutkan ke checkout, Anda harus menambahkan beberapa produk ke keranjang belanja Anda. ",
+      "title_collection": "Anda mungkin juga menyukai",
+      "cart_error": "Ada kesalahan saat memperbarui keranjang Anda. ",
+      "cart_quantity_error_html": "Anda hanya dapat menambahkan [kuantitas] item ini ke keranjang Anda.",
+      "cart_quantity_error_alert": "Anda hanya bisa menambahkan {{maxQuantity}} produk ini untuk keranjang Anda",
+      "cart_quantity_error_alert_2": "Jumlah produk ini tidak mencukupi.",
+      "quick_cart": "Keranjang cepat",
+      "taxes_and_shipping_policy_at_checkout_html": "Pajak dan <a href=\"{{ link }}\">pengiriman</a> dihitung saat checkout",
+      "taxes_included_but_shipping_at_checkout": "Pajak termasuk dan pengiriman dihitung saat checkout",
+      "taxes_included_and_shipping_policy_html": "Termasuk pajak. <a href=\"{{ link }}\">Pengiriman</a> dihitung saat checkout.",
+      "taxes_and_shipping_at_checkout": "Pajak dan pengiriman yang dihitung saat checkout",
+      "headings": {
+        "product": "Produk",
+        "price": "Harga",
+        "total": "Total",
+        "quantity": "Kuantitas",
+        "remove": "Menghapus"
+      },
+      "update": "Memperbarui",
+      "upsell": "Item berikut telah ditambahkan ke keranjang Anda:",
+      "your_order": "Pesanan Anda"
+    },
+    "footer": {
+      "payment": "Metode pembayaran"
+    },
+    "featured_blog": {
+      "view_all": "Lihat semua",
+      "onboarding_title": "Posting Blog",
+      "onboarding_content": "Beri pelanggan Anda ringkasan posting blog Anda"
+    },
+    "featured_collection": {
+      "view_all": "Lihat semua",
+      "view_all_label": "Lihat semua produk di {{ collection_name }} koleksi"
+    },
+    "collection_list": {
+      "title": "Koleksi",
+      "view_all": "Lihat semua",
+      "count": "{{ count }} produk"
+    },
+    "collection_template": {
+      "all_tags": "Semua produk",
+      "apply": "Menerapkan",
+      "clear": "Jernih",
+      "clear_all": "Bersihkan semuanya",
+      "empty": "Tidak ada produk yang ditemukan",
+      "end_count": " dari {{ count }} Hasil",
+      "from": "Dari",
+      "filter_and_sort": "Filter dan urutkan",
+      "filter_by_label": "Filter oleh",
+      "filter_button": "Menyaring",
+      "filters_selected": "{{ count }} terpilih",
+      "item_per_page": "Item per halaman",
+      "load_more": "Memuat lebih banyak",
+      "show_more": "Tunjukkan lebih banyak",
+      "show_less": "Tunjukkan lebih sedikit",
+      "show_all": "Tunjukkan semua",
+      "loading_more": "Memuat lebih banyak",
+      "no_more": "Tidak ada lagi produk",
+      "max": "Max",
+      "max_price": "Harga tertinggi adalah {{ price }}",
+      "min": "Min",
+      "range": "Jangkauan",
+      "product_count": "Menunjukkan {{ count }} dari {{ total }} produk",
+      "read_more": "Baca selengkapnya",
+      "read_less": "Baca lebih sedikit",
+      "refined_by": "Disempurnakan oleh",
+      "reset": "Jernih",
+      "start_count": "Menunjukkan",
+      "sort_button": "Menyortir",
+      "sort_by_label": "Urutkan",
+      "title": "Koleksi",
+      "to": "ke",
+      "use_fewer_filters_html": "Gunakan lebih sedikit filter atau <a class=\"{{ class }}\" href=\"{{ link }}\">Bersihkan semuanya</a>",
+      "view_as": "Lihat sebagai",
+      "image": "Gambar",
+      "product": "Produk",
+      "price": "Harga",
+      "qty": "Qty",
+      "options": "Opsi",
+      "show_variants": "Tampilkan varian",
+      "results": "Hasil"
+    },
+    "collection_list_template": {
+      "product_count": "{{ count }} produk"
+    },
+    "sidebar": {
+      "title": "Bilah sisi"
+    }
+  },
+  "localization": {
+    "country_label": "Negara/wilayah",
+    "language_label": "Bahasa",
+    "update_language": "Perbarui bahasa",
+    "update_country": "Perbarui negara/wilayah"
+  },
+  "currency": {
+    "change_text": "Mata uang toko berubah menjadi",
+    "currency": "Mata uang"
+  },
+  "customer": {
+    "account": {
+      "welcome": "Hai, {{ name }}",
+      "title": "Akun",
+      "my_account": "Akun saya",
+      "details": "Detail Akun",
+      "view_addresses": "Lihat alamat",
+      "return": "Kembali ke detail akun"
+    },
+    "account_fallback": "Akun",
+    "activate_account": {
+      "title": "Aktifkan Akun",
+      "subtext": "Buat kata sandi Anda untuk mengaktifkan akun Anda.",
+      "password": "Kata sandi",
+      "password_confirm": "Konfirmasi Kata Sandi",
+      "submit": "Aktifkan Akun",
+      "cancel": "Undangan penurunan"
+    },
+    "addresses": {
+      "title": "Alamat",
+      "default": "Bawaan",
+      "address_book": "Buku alamat pelanggan",
+      "add_new": "Tambahkan alamat baru",
+      "edit_address": "Edit alamat",
+      "first_name": "Nama depan",
+      "last_name": "Nama Belakang",
+      "company": "Perusahaan",
+      "address1": "Alamat 1",
+      "address2": "Alamat 2",
+      "city": "Kota",
+      "country": "Negara/wilayah",
+      "province": "Propinsi",
+      "zip": "Kode pos/pos",
+      "phone": "Telepon",
+      "set_default": "Setel sebagai alamat default",
+      "add": "Tambahkan alamat",
+      "update": "Alamat Perbarui",
+      "cancel": "Membatalkan",
+      "edit": "Edit",
+      "delete": "Menghapus",
+      "delete_confirm": "Apakah Anda yakin ingin menghapus alamat ini?",
+      "none": "Atur rumah dan alamat pekerjaan Anda, jika Anda belum melakukannya."
+    },
+    "forgot_password": "Lupa kata sandi Anda?",
+    "log_in": "Masuk",
+    "sign_in": "Masuk",
+    "or": "atau",
+    "create_account": "Buat akun",
+    "log_out": "Keluar",
+    "hello": "Halo",
+    "my_account": "Akun saya",
+    "login_page": {
+      "cancel": "Membatalkan",
+      "create_account": "Buat akun",
+      "email": "Alamat email",
+      "forgot_password": "Kehilangan Kata Sandi Anda?",
+      "guest_continue": "Melanjutkan",
+      "guest_title": "Lanjutkan sebagai Tamu",
+      "password": "Kata sandi",
+      "title": "Masuk",
+      "sign_in": "Login",
+      "submit": "Kirim",
+      "register": "Daftar",
+      "text": "Harap masukkan email dan kata sandi Anda di bawah ini untuk mengakses akun Anda"
+    },
+    "order": {
+      "title": "Memesan {{ name }}",
+      "date_html": "Ditempatkan {{ date }}",
+      "cancelled_html": "Pesanan dibatalkan {{ date }}",
+      "cancelled_reason": "Alasan: {{ reason }}",
+      "billing_address": "Alamat penagihan",
+      "payment_status": "Status pembayaran",
+      "shipping_address": "Alamat pengiriman",
+      "fulfillment_status": "Status pemenuhan",
+      "discount": "Diskon",
+      "shipping": "Pengiriman",
+      "tax": "Pajak",
+      "product": "Produk",
+      "sku": "Sku",
+      "price": "Harga",
+      "quantity": "Kuantitas",
+      "total": "Total",
+      "fulfilled_at_html": "Terpenuhi {{ date }}",
+      "track_shipment": "Lacak Pengiriman",
+      "tracking_url": "Tautan pelacakan",
+      "tracking_company": "Pembawa",
+      "tracking_number": "Nomor pelacakan",
+      "subtotal": "Subtotal"
+    },
+    "orders": {
+      "title": "Sejarah pesanan",
+      "order_number": "Memesan",
+      "order_number_link": "Nomor pesanan {{ number }}",
+      "date": "Tanggal",
+      "payment_status": "Status pembayaran",
+      "fulfillment_status": "Status pemenuhan",
+      "total": "Total",
+      "none": "Anda belum melakukan pemesanan."
+    },
+    "recover_password": {
+      "title": "Setel ulang kata sandi Anda",
+      "subtext": "Kami akan mengirimkan email kepada Anda untuk mengatur ulang kata sandi Anda",
+      "success": "Kami telah mengirimi Anda email dengan tautan untuk memperbarui kata sandi Anda."
+    },
+    "register": {
+      "title": "Buat akun",
+      "first_name": "Nama depan",
+      "last_name": "Nama Belakang",
+      "email": "E-mail",
+      "you_email": "Alamat email Anda",
+      "password": "Kata sandi",
+      "you_password": "Kata sandi Anda",
+      "register": "Daftar",
+      "submit": "Buat akun",
+      "text": "Silakan mendaftar di bawah untuk membuat akun"
+    },
+    "reset_password": {
+      "title": "Setel ulang kata sandi akun",
+      "subtext": "Masukkan kata sandi baru untuk {{ email }}",
+      "password": "Kata sandi",
+      "password_confirm": "Konfirmasi Kata Sandi",
+      "submit": "Setel ulang kata sandi"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Ini milikmu {{ value }} kartu hadiah untuk {{ shop }}Lai",
+      "subtext": "Kartu Hadiah Anda",
+      "gift_card_code": "Kode Kartu Hadiah",
+      "shop_link": "Lanjutkan berbelanja",
+      "remaining_html": "Tersisa {{ balance }}",
+      "add_to_apple_wallet": "Tambahkan ke dompet apel",
+      "qr_image_alt": "Kode QR - Pindai untuk Menukarkan Kartu Hadiah",
+      "copy_code": "Salin kode",
+      "expired": "Kedaluwarsa",
+      "copy_code_success": "Kode disalin dengan sukses",
+      "print_gift_card": "Mencetak"
+    }
+  },
+  "wishlist": {
+    "general": {
+      "wishlist": "Daftar keinginan",
+      "title": "Daftar keinginan saya",
+      "added": "Ditambahkan ke wishlist",
+      "product_image": "Gambar",
+      "product_name": "Nama Produk",
+      "price": "Harga",
+      "add_1": "Menambahkan",
+      "add": "Tambahkan ke wishlist",
+      "remove": "Menghapus",
+      "share": "Bagikan daftar keinginan saya melalui email",
+      "empty": "Tidak ada produk yang ditambahkan ke daftar keinginan Anda",
+      "continue_shopping": "Lanjutkan berbelanja",
+      "wishlist_title": "Daftar keinginan Anda kosong",
+      "wishlist_desc": "Tidak ada produk yang ditambahkan ke daftar keinginan Anda"
+    }
+  },
+  "compare": {
+    "general": {
+      "title": "Membandingkan",
+      "add": "Tambahkan untuk membandingkan",
+      "added": "Ditambahkan untuk membandingkan",
+      "remove_compare": "Hapus Bandingkan",
+      "remove_all": "Hapus semua",
+      "product": "Produk",
+      "sku": "Sku",
+      "review": "Peringkat",
+      "description": "Keterangan",
+      "collection": "Koleksi",
+      "availability": "Tersedianya",
+      "product_type": "Jenis produk",
+      "other_details": "Detail lainnya",
+      "message": "Anda harus memilih setidaknya dua produk untuk dibandingkan!"
+    }
+  },
+  "someone_purcharse": {
+    "general": {
+      "text_1": "Seseorang baru -baru ini membeli a",
+      "text_2": "[waktu]",
+      "text_3": "[Lokasi] dibeli"
+    }
+  },
+  "before_you_leave": {
+    "general": {
+      "recommended_product": "Direkomendasikan",
+      "back_to_store": "Kembali ke toko",
+      "continue_shopping": "Lanjutkan berbelanja"
+    }
+  },
+  "recently_viewed": {
+    "general": {
+      "product_title": "Baru -baru ini dilihat",
+      "no_product": "Maaf, tidak ada produk.",
+      "share_title": "Sosial",
+      "newsletter": "Pendaftaran buletin"
+    }
+  },
+  "calculator_free_shipping_message": {
+    "general": {
+      "free_shipping_message": "Pengiriman gratis untuk semua pesanan berakhir",
+      "free_shipping_message_1": "Anda memenuhi syarat untuk pengiriman gratis!",
+      "free_shipping_message_2": "Hampir sampai, tambahkan",
+      "free_shipping_message_3": "lebih banyak untuk didapat",
+      "free_shipping_message_4": "Pengiriman GRATIS!",
+      "free_shipping_1": "Bebas",
+      "free_shipping_2": "Tbd"
+    }
+  },
+  "notify_form": {
+    "general": {
+      "label": "Beri tahu saya",
+      "title": "Tinggalkan email Anda dan kami akan memberi tahu segera setelah produk / varian kembali tersedia",
+      "placeholder": "Masukkan email Anda",
+      "submit": "Berlangganan",
+      "success": "Terima kasih! ",
+      "error": "Silakan gunakan alamat email yang valid, seperti john@example.com."
+    }
+  },
+  "ask_an_expert": {
+    "general": {
+      "text": "Tanya seorang ahli",
+      "name": "Nama Anda",
+      "mail": "Surat Anda",
+      "phone": "Ponsel Anda",
+      "message": "Apa yang bisa saya bantu hari ini?",
+      "submit": "Kirim pertanyaan",
+      "success": "Terima kasih. ",
+      "error_1": "Silakan gunakan alamat email yang valid, seperti john@example.com.",
+      "error_2": "Lapangan harus diisi sebelum mengirimkan formulir ini.",
+      "customer_name": "Nama saya",
+      "customer_mail": "Surat saya",
+      "customer_phone": "Ponsel saya",
+      "customer_message": "Pesan saya"
+    }
+  },
+  "countdown": {
+    "general": {
+      "text": "Ayo cepat! ",
+      "day": "Hari -hari",
+      "hour": "Jam",
+      "min": "Menit",
+      "sec": "Secs",
+      "d": "Hari -hari",
+      "h": "Jam",
+      "m": "Menit",
+      "s": "Secs",
+      "day_2": "Hari -hari",
+      "hour_2": "Jam",
+      "min_2": "Menit",
+      "sec_2": "Secs",
+      "days": "Hari -hari",
+      "hours": "Jam",
+      "mins": "Menit",
+      "secs": "Secs"
+    }
+  },
+  "customer_viewing": {
+    "general": {
+      "text": "{{ number }} Pelanggan melihat produk ini"
+    }
+  },
+  "size_chart": {
+    "general": {
+      "title": "Bagan Ukuran",
+      "text": "Panduan Ukuran"
+    }
+  },
+  "compare_color": {
+    "general": {
+      "title": "Bandingkan warna",
+      "text": "Klik warna / pola untuk membandingkan, klik dan seret gambar untuk memesan ulang"
+    }
+  },
+  "lookbook": {
+    "view_all": "Lihat seluruh tampilan",
+    "shop_look": "Belanja tampilannya"
+  },
+  "bulk_editor_page": {
+    "general": {
+      "all_collection": "Semua produk",
+      "select_collection": "Pilih Kategori",
+      "submit": "Kirim editor",
+      "edit_metafields": "Edit Metafield dalam Produk."
+    }
+  },
+  "find_a_store": {
+    "no_stores": "Maaf, kami sedang mengerjakan presentasi toko kami sekarang! "
+  }
+}
