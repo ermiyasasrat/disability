@@ -8,6 +8,8 @@
     assign lazy_load = lazy_load | default: true
     assign show_secondary_image = show_secondary_image | default: false
     assign placeholder_index = placeholder_index | default: 1
+    assign image_width = image_width | default: 60
+    assign image_height = image_height | default: 60
 -%}
 
 <div class="card-product sibling-product-card" data-product-id="{{ product_card_product.id }}">
@@ -21,7 +23,7 @@
                         {{ product_card_product.featured_media | image_url }} {{ product_card_product.featured_media.width }}w
                     "
                     src="{{ product_card_product.featured_media | image_url: width: 330 }}"
-                    sizes="(min-width: 1200px) 80px, (min-width: 768px) 80px, 60px"
+                    sizes="(min-width: 1200px) {{ image_width }}px, (min-width: 768px) {{ image_width }}px, {{ image_width | times: 0.85 | round }}px"
                     alt="{{ product_card_product.featured_media.alt | escape }}"
                     class="card-product__image"
                     loading="lazy"

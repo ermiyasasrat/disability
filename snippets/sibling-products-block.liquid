@@ -6,6 +6,8 @@
     assign block_title = block.settings.sibling_products_title
     assign column = block.settings.sibling_products_per_row
     assign selected_collection = block.settings.sibling_products_collection
+    assign image_width = block.settings.sibling_product_image_width | default: 60
+    assign image_height = block.settings.sibling_product_image_height | default: 60
     
     assign sibling_products = blank
     
@@ -44,6 +46,8 @@
         padding-bottom: var(--spacing-bottom);
         margin-top: 20px;
         border-radius: 8px;
+        --sibling-image-width: {{ image_width }}px;
+        --sibling-image-height: {{ image_height }}px;
     }
     
     .sibling-products-block .sibling-products-title {
@@ -85,8 +89,8 @@
     
     .sibling-products-column .product .card-product__media {
         flex-shrink: 0;
-        width: 60px;
-        height: 60px;
+        width: var(--sibling-image-width);
+        height: var(--sibling-image-height);
     }
     
     .sibling-products-column .product .card-product__content {
@@ -143,8 +147,8 @@
         }
         
         .sibling-products-column .product .card-product__media {
-            width: 50px;
-            height: 50px;
+            width: calc(var(--sibling-image-width) * 0.85);
+            height: calc(var(--sibling-image-height) * 0.85);
         }
         
         .sibling-products-column .product .card-product__title {
@@ -183,7 +187,9 @@
                                 show_vendor: false,
                                 show_rating: false,
                                 show_quick_add: false,
-                                placeholder_index: forloop.index
+                                placeholder_index: forloop.index,
+                                image_width: image_width,
+                                image_height: image_height
                             %}
                         </div>
                         {%- assign displayed_count = displayed_count | plus: 1 -%}
